@@ -106,15 +106,15 @@ export default function TopicDetails() {
         {/* Section Content Display */}
         {currentSection ? (
           <div className="lesson-section-content">
-            <h3 style={{ fontSize: '1.25rem', color: 'var(--accent-blue)', marginBottom: '16px' }}>
+            <h3 style={{ fontSize: '1.25rem', color: 'var(--accent-blue)', marginBottom: '16px', fontWeight: 700 }}>
               {currentSection.title}
             </h3>
-            <p style={{ color: '#e2e8f0', lineHeight: 1.8 }}>
+            <p style={{ color: 'var(--text-main)', lineHeight: 1.85, fontSize: '1.05rem', whiteSpace: 'pre-line' }}>
               {currentSection.content_text}
             </p>
           </div>
         ) : (
-          <p>No content available for this level.</p>
+          <p style={{ color: 'var(--text-muted)' }}>No content available for this level.</p>
         )}
       </div>
 
@@ -125,11 +125,11 @@ export default function TopicDetails() {
         alignItems: 'center',
         flexWrap: 'wrap',
         gap: '16px',
-        background: 'linear-gradient(135deg, rgba(30, 58, 138, 0.4), rgba(15, 23, 42, 0.6))',
-        border: '1px solid rgba(59, 130, 246, 0.4)'
+        background: 'var(--bg-secondary)',
+        border: '1px solid var(--border-card)'
       }}>
         <div>
-          <h3 style={{ fontSize: '1.15rem' }}>Ready for Evaluation?</h3>
+          <h3 style={{ fontSize: '1.15rem', color: 'var(--text-main)' }}>Ready for Evaluation?</h3>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', marginTop: '4px' }}>
             Score ≥ 80% on the 10-question quiz to mark this topic COMPLETED and trigger the 120-day progression.
           </p>

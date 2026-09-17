@@ -106,7 +106,7 @@ export default function Formulas() {
                   {f.units && (
                     <div>
                       <strong style={{ color: 'var(--accent-cyan)' }}>Units: </strong>
-                      <span style={{ color: '#fff' }}>{f.units}</span>
+                      <span style={{ color: 'var(--text-main)' }}>{f.units}</span>
                     </div>
                   )}
                   {f.variable_meanings && (

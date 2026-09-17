@@ -155,7 +155,7 @@ export default function Mistakes() {
                     value={m.category}
                     onChange={(e) => handleUpdateCategory(m.id, e.target.value)}
                     style={{
-                      background: 'rgba(15, 23, 42, 0.8)',
+                      background: 'var(--bg-card)',
                       border: '1px solid var(--border-card)',
                       color: 'var(--text-main)',
                       padding: '5px 10px',
@@ -197,12 +197,13 @@ export default function Mistakes() {
 
               {m.question?.explanation_json && (
                 <div style={{
-                  background: 'rgba(0, 0, 0, 0.3)',
+                  background: 'var(--bg-secondary)',
                   padding: '12px 16px',
                   borderRadius: 'var(--radius-sm)',
                   fontSize: '0.88rem',
                   border: '1px solid var(--border-subtle)',
-                  color: '#e2e8f0'
+                  color: 'var(--text-main)',
+                  lineHeight: 1.6
                 }}>
                   <strong style={{ color: 'var(--accent-gold)' }}>Why Correct: </strong>
                   {m.question.explanation_json.why_correct}

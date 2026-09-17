@@ -524,13 +524,21 @@ button {
 }
 
 .lesson-section-content {
-  background: var(--bg-secondary);
+  background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
-  padding: 20px;
-  line-height: 1.8;
+  padding: 24px;
+  line-height: 1.85;
   font-size: 1.05rem; /* Large, comfortable reading size */
   color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+}
+
+.lesson-section-content p {
+  color: var(--text-main);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 12px;
 }
 
 /* Formula Callout Box */

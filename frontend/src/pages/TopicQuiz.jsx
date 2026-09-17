@@ -133,20 +133,20 @@ export default function TopicQuiz() {
 
           {/* Result Metric Grid */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', marginBottom: '28px' }}>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#fff' }}>{result.score} / {result.totalQuestions}</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)' }}>{result.score} / {result.totalQuestions}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Score</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: isCompleted ? '#34d399' : '#f87171' }}>{result.accuracy}%</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: isCompleted ? 'var(--accent-emerald)' : 'var(--accent-ruby)' }}>{result.accuracy}%</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Accuracy</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#60a5fa' }}>{formatTimer(result.durationSeconds)}</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-blue)' }}>{formatTimer(result.durationSeconds)}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Time Taken</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#fbbf24' }}>{result.topicStatus}</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-gold)' }}>{result.topicStatus}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Topic Status</div>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function TopicQuiz() {
         border: '1px solid var(--border-card)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontWeight: 700, fontSize: '1rem', color: '#fff' }}>
+          <span style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-main)' }}>
             Question {currentIndex + 1} of {questions.length}
           </span>
           <span className="badge badge-learning" style={{ fontSize: '0.7rem' }}>

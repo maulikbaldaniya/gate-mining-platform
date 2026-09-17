@@ -168,18 +168,18 @@ export default function PYQs() {
                 {/* Revealed Explanation */}
                 {isRevealed && q.explanation_json && (
                   <div style={{
-                    background: 'rgba(0, 0, 0, 0.35)',
+                    background: 'var(--bg-secondary)',
                     borderRadius: 'var(--radius-sm)',
                     padding: '16px 18px',
                     border: '1px solid var(--border-subtle)',
                     fontSize: '0.9rem',
                     lineHeight: 1.6
                   }}>
-                    <div style={{ color: '#34d399', fontWeight: 700, marginBottom: '6px' }}>
+                    <div style={{ color: 'var(--accent-emerald)', fontWeight: 700, marginBottom: '6px' }}>
                       Official Correct Answer: Option {q.correct_answer}
                     </div>
                     {q.explanation_json.why_correct && (
-                      <p style={{ color: '#e2e8f0', marginBottom: '8px' }}>
+                      <p style={{ color: 'var(--text-main)', marginBottom: '8px', lineHeight: 1.7 }}>
                         {q.explanation_json.why_correct}
                       </p>
                     )}

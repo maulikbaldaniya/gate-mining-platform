@@ -115,20 +115,20 @@ export default function TestSession() {
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', marginBottom: '28px' }}>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#fff' }}>{result.score} / {result.totalQuestions}</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)' }}>{result.score} / {result.totalQuestions}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Score</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: result.accuracy >= 70 ? '#34d399' : '#f87171' }}>{result.accuracy}%</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: result.accuracy >= 70 ? 'var(--accent-emerald)' : 'var(--accent-ruby)' }}>{result.accuracy}%</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Accuracy</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#34d399' }}>{result.correctCount}</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-emerald)' }}>{result.correctCount}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Correct</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#f87171' }}>{result.wrongCount}</div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '16px 24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-ruby)' }}>{result.wrongCount}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Wrong</div>
             </div>
           </div>

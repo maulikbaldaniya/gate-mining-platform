@@ -57,7 +57,7 @@ export default function Dashboard() {
             Welcome back, <span style={{ color: 'var(--accent-gold)' }}>{user.name}</span>
           </h1>
           <p style={{ color: 'var(--text-muted)' }}>
-            Target: <span style={{ color: '#fff', fontWeight: 600 }}>{user.target_exam}</span> • Consistent daily progress builds rank!
+            Target: <span style={{ color: 'var(--text-main)', fontWeight: 600 }}>{user.target_exam}</span> • Consistent daily progress builds rank!
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export default function Dashboard() {
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>
-              <span style={{ fontSize: '1.25rem', fontWeight: 800, color: '#fff' }}>
+              <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)' }}>
                 {today.completed_count} / {today.total_count}
               </span>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Topics Done</div>

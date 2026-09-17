@@ -129,11 +129,11 @@ export default function WeeklyTests() {
                 <div style={{ display: 'flex', gap: '28px' }}>
                   <div>
                     <span style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>Score: </span>
-                    <strong style={{ fontSize: '1.2rem', color: '#fff' }}>{test.score} / {test.total_questions}</strong>
+                    <strong style={{ fontSize: '1.2rem', color: 'var(--text-main)' }}>{test.score} / {test.total_questions}</strong>
                   </div>
                   <div>
                     <span style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>Accuracy: </span>
-                    <strong style={{ fontSize: '1.2rem', color: test.accuracy >= 70 ? '#34d399' : '#f87171' }}>
+                    <strong style={{ fontSize: '1.2rem', color: test.accuracy >= 70 ? 'var(--accent-emerald)' : 'var(--accent-ruby)' }}>
                       {test.accuracy}%
                     </strong>
                   </div>
@@ -156,13 +156,13 @@ export default function WeeklyTests() {
           /* Not Yet Generated */
           <div>
             <div style={{
-              background: 'rgba(255, 255, 255, 0.03)',
+              background: 'var(--bg-secondary)',
               borderRadius: 'var(--radius-md)',
               padding: '18px',
               border: '1px solid var(--border-subtle)',
               marginBottom: '24px'
             }}>
-              <h3 style={{ fontSize: '1rem', color: '#fff', marginBottom: '8px' }}>Eligibility Criteria</h3>
+              <h3 style={{ fontSize: '1rem', color: 'var(--text-main)', marginBottom: '8px' }}>Eligibility Criteria</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.6 }}>
                 The algorithm pulls questions strictly from topics you have marked <strong>COMPLETED</strong> in Week {weekNumber}.
                 Incomplete topics are never included.
