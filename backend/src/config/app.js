@@ -41,6 +41,19 @@ app.use(express.urlencoded({ extended: true, limit: '2mb' }));
 // Apply rate limiter to /api
 app.use('/api', apiLimiter);
 
+// Favicon handler
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
+// Root welcome/status endpoint
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'GATE Mining Engineering API is live and running!',
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+  });
+});
+
 // API Routes
 app.use('/api', routes);
 

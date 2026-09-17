@@ -1,5 +1,6 @@
 const { Sequelize } = require('sequelize');
 const path = require('path');
+const pg = require('pg');
 const logger = require('../utils/logger');
 require('dotenv').config();
 
@@ -12,6 +13,7 @@ if (process.env.DATABASE_URL) {
   // PostgreSQL URL connection (Neon, Render, Railway, etc.)
   sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
+    dialectModule: pg,
     protocol: 'postgres',
     dialectOptions: {
       ssl: process.env.DB_SSL === 'false' ? false : {
@@ -37,6 +39,7 @@ if (process.env.DATABASE_URL) {
       host: process.env.DB_HOST || 'localhost',
       port: process.env.DB_PORT || 5432,
       dialect: 'postgres',
+      dialectModule: pg,
       logging: isProduction ? false : (msg) => logger.debug(msg),
       pool: {
         max: 10,
