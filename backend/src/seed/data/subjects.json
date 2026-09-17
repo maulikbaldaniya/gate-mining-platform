@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "code": "MN_GEO_DEV_SURV",
+    "name": "Mining Geology, Mine Development & Surveying",
+    "description": "Minerals, structural geology, access drivages, drilling & blasting, mine surveying instruments & correlation",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 1
+  },
+  {
+    "id": 2,
+    "code": "MN_GEOMECH",
+    "name": "Geomechanics & Ground Control",
+    "description": "Rock mechanics, in-situ stresses, failure criteria, pillar design, rock mass classification (RMR/Q) & support systems",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 2
+  },
+  {
+    "id": 3,
+    "code": "MN_METHODS_MACH",
+    "name": "Mining Methods & Machinery",
+    "description": "Surface & underground coal/metal mining methods (Bord & Pillar, Longwall, Stoping), hoisting, conveyors & face equipment",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 3
+  },
+  {
+    "id": 4,
+    "code": "MN_VENT_ENV_HAZ",
+    "name": "Mine Ventilation, Environment & Hazards",
+    "description": "Mine gases, natural/mechanical ventilation, Atkinson's equation, fan networks, mine fires, explosions & inundation",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 4
+  },
+  {
+    "id": 5,
+    "code": "MN_ECON_PLAN_SYS",
+    "name": "Mineral Economics, Planning & Systems Engineering",
+    "description": "Sampling, reserve estimation, NPV/IRR valuation, pit optimization, operations research (LP, PERT/CPM, queuing)",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 5
+  },
+  {
+    "id": 6,
+    "code": "MN_ENGG_MATHS",
+    "name": "Engineering Mathematics",
+    "description": "Linear algebra, calculus, vector calculus, differential equations, probability, statistics & numerical methods",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 6
+  },
+  {
+    "id": 7,
+    "code": "MN_GEN_APT",
+    "name": "General Aptitude",
+    "description": "Verbal ability, quantitative aptitude, analytical reasoning, and spatial aptitude",
+    "exam_year": 2027,
+    "content_version": "2027-v1",
+    "order_index": 7
+  }
+]

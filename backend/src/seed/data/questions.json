@@ -1,0 +1,237 @@
+[
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "EASY",
+    "question_text": "Which of the following minerals represents the benchmark for hardness 7 on the Mohs Hardness Scale?",
+    "options": [
+      { "option_key": "A", "option_text": "Orthoclase Feldspar", "is_correct": false },
+      { "option_key": "B", "option_text": "Quartz", "is_correct": true },
+      { "option_key": "C", "option_text": "Topaz", "is_correct": false },
+      { "option_key": "D", "option_text": "Fluorite", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Mohs scale of mineral hardness",
+      "why_correct": "Quartz has a defined hardness of 7 on Mohs scale and can scratch feldspar (6), fluorite (4), and glass.",
+      "why_wrong": "Orthoclase is 6, Topaz is 8, and Fluorite is 4.",
+      "formula": "Mohs hardness rank: Talc(1) < Gypsum(2) < Calcite(3) < Fluorite(4) < Apatite(5) < Orthoclase(6) < Quartz(7) < Topaz(8) < Corundum(9) < Diamond(10)",
+      "common_mistake": "Confusing Feldspar (6) with Quartz (7).",
+      "revision_summary": "Quartz (SiO2) is widely present in sandstone and granite."
+    },
+    "is_pyq": true,
+    "pyq_year": 2019,
+    "source": "GATE 2019 Mining Engineering"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "EASY",
+    "question_text": "Which of the following is a classic example of an extrusive igneous volcanic rock?",
+    "options": [
+      { "option_key": "A", "option_text": "Granite", "is_correct": false },
+      { "option_key": "B", "option_text": "Basalt", "is_correct": true },
+      { "option_key": "C", "option_text": "Gabbro", "is_correct": false },
+      { "option_key": "D", "option_text": "Diorite", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Igneous rock classification",
+      "why_correct": "Basalt is formed by rapid cooling of basaltic lava at the earth's surface, resulting in fine-grained (aphanitic) texture.",
+      "why_wrong": "Granite, Gabbro, and Diorite are all intrusive (plutonic) coarse-grained igneous rocks.",
+      "formula": "Extrusive = Fast cooling on surface = Fine grained; Intrusive = Slow cooling deep underground = Coarse grained",
+      "common_mistake": "Mixing up Gabbro (intrusive equivalent) with Basalt.",
+      "revision_summary": "Deccan Traps of India are composed of massive flood basalts."
+    },
+    "is_pyq": false,
+    "source": "Standard Mining Geology Reference"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "question_text": "An unknown mineral can scratch Calcite (H=3) but cannot scratch Apatite (H=5). When scratched with Fluorite (H=4), no scratch mark is observed on either mineral. The Mohs hardness of the unknown mineral is:",
+    "options": [
+      { "option_key": "A", "option_text": "3.0", "is_correct": false },
+      { "option_key": "B", "option_text": "4.0", "is_correct": true },
+      { "option_key": "C", "option_text": "4.5", "is_correct": false },
+      { "option_key": "D", "option_text": "5.0", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Relative scratch hardness test",
+      "why_correct": "If two minerals do not scratch each other, they possess identical hardness. Since Fluorite has hardness 4, the mineral hardness is exactly 4.0.",
+      "why_wrong": "Options A and D violate the test against Calcite and Apatite.",
+      "formula": "Hardness(A) = Hardness(B) if neither scratches the other.",
+      "common_mistake": "Assuming it must be an intermediate decimal like 4.5.",
+      "revision_summary": "Fluorite has hardness 4 and octahedral cleavage."
+    },
+    "is_pyq": true,
+    "pyq_year": 2021,
+    "source": "GATE 2021 Mining Engineering"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "question_text": "In a dry state, a cylindrical rock sample weighs 250 g. When submerged completely in water, its apparent weight is measured as 150 g. The specific gravity of the rock sample is:",
+    "options": [
+      { "option_key": "A", "option_text": "1.67", "is_correct": false },
+      { "option_key": "B", "option_text": "2.50", "is_correct": true },
+      { "option_key": "C", "option_text": "2.65", "is_correct": false },
+      { "option_key": "D", "option_text": "3.00", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Specific gravity determination via Archimedes principle",
+      "why_correct": "G = W_dry / (W_dry - W_submerged) = 250 / (250 - 150) = 250 / 100 = 2.50.",
+      "why_wrong": "Option A divides 250 by 150. Option C is standard quartz density but not this specimen.",
+      "formula": "G = W_dry / (W_dry - W_submerged)",
+      "common_mistake": "Using W_submerged in the denominator instead of the loss in weight (W_dry - W_submerged).",
+      "revision_summary": "Common rock specific gravity ranges from 2.4 to 2.9."
+    },
+    "is_pyq": false,
+    "source": "Standard Rock Mechanics Laboratory Practice"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "question_text": "Which of the following sedimentary rocks is classified as non-clastic (chemical or biochemical precipitate)?",
+    "options": [
+      { "option_key": "A", "option_text": "Shale", "is_correct": false },
+      { "option_key": "B", "option_text": "Sandstone", "is_correct": false },
+      { "option_key": "C", "option_text": "Conglomerate", "is_correct": false },
+      { "option_key": "D", "option_text": "Rock Salt (Halite)", "is_correct": true }
+    ],
+    "correct_answer": "D",
+    "explanation_json": {
+      "concept": "Sedimentary rock taxonomy",
+      "why_correct": "Rock salt (halite) and gypsum are chemical evaporites precipitated directly from saturated brine, hence non-clastic.",
+      "why_wrong": "Shale, sandstone, and conglomerate are formed from fragments of older rocks cemented together (clastic).",
+      "formula": "Clastic = mechanically deposited debris; Non-clastic = chemical precipitate or organic accumulation.",
+      "common_mistake": "Thinking shale is chemical because of its clay minerals.",
+      "revision_summary": "Evaporites like gypsum and halite form thick beds in inland basins."
+    },
+    "is_pyq": false,
+    "source": "Verified Mining Geology Reference"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "HARD",
+    "question_text": "Bowen's Reaction Series governs the crystallization sequence of minerals from cooling magma. In the discontinuous branch, which mineral crystallizes immediately after Olivine?",
+    "options": [
+      { "option_key": "A", "option_text": "Biotite Mica", "is_correct": false },
+      { "option_key": "B", "option_text": "Pyroxene (Augite)", "is_correct": true },
+      { "option_key": "C", "option_text": "Amphibole (Hornblende)", "is_correct": false },
+      { "option_key": "D", "option_text": "Quartz", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Bowen's reaction series",
+      "why_correct": "The discontinuous branch sequence at decreasing temperatures is: Olivine -> Pyroxene -> Amphibole -> Biotite Mica.",
+      "why_wrong": "Amphibole follows Pyroxene; Biotite follows Amphibole; Quartz crystallizes last at the lowest temperature.",
+      "formula": "Olivine (high T) -> Pyroxene -> Amphibole -> Biotite -> Potassium Feldspar -> Muscovite -> Quartz (low T)",
+      "common_mistake": "Interchanging Pyroxene and Amphibole.",
+      "revision_summary": "Minerals formed at high temperature (Olivine) weather most rapidly at the surface."
+    },
+    "is_pyq": true,
+    "pyq_year": 2022,
+    "source": "GATE 2022 Mining Engineering"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "EASY",
+    "question_text": "What is the cleavage characteristic of the mineral Mica?",
+    "options": [
+      { "option_key": "A", "option_text": "Rhombohedral in 3 directions", "is_correct": false },
+      { "option_key": "B", "option_text": "Basal cleavage in 1 direction (perfect sheets)", "is_correct": true },
+      { "option_key": "C", "option_text": "Cubic in 3 directions at 90 degrees", "is_correct": false },
+      { "option_key": "D", "option_text": "Conchoidal fracture with no cleavage", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Mineral cleavage and crystal structure",
+      "why_correct": "Mica minerals (Biotite, Muscovite) have a sheet silicate (phyllosilicate) structure giving one perfect basal cleavage plane.",
+      "why_wrong": "Calcite has rhombohedral cleavage; Galena/Halite have cubic cleavage; Quartz has conchoidal fracture.",
+      "formula": "Sheet silicate structure = 1 plane of perfect cleavage.",
+      "common_mistake": "Confusing Calcite's 3-directional cleavage with Mica.",
+      "revision_summary": "Mica flakes can be peeled into paper-thin transparent sheets."
+    },
+    "is_pyq": false,
+    "source": "Verified Mineralogy Reference"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "question_text": "Foliation is a distinct structural texture found predominantly in which class of rocks?",
+    "options": [
+      { "option_key": "A", "option_text": "Plutonic Igneous Rocks", "is_correct": false },
+      { "option_key": "B", "option_text": "Chemical Sedimentary Rocks", "is_correct": false },
+      { "option_key": "C", "option_text": "Regional Metamorphic Rocks", "is_correct": true },
+      { "option_key": "D", "option_text": "Pyroclastic Volcanic Rocks", "is_correct": false }
+    ],
+    "correct_answer": "C",
+    "explanation_json": {
+      "concept": "Metamorphic textures",
+      "why_correct": "Under directed regional tectonic pressure, platy minerals align perpendicularly to the maximum compressive stress, producing foliation (slate, schist, gneiss).",
+      "why_wrong": "Igneous rocks are crystalline/equigranular; Sedimentary rocks display bedding/lamination, not metamorphic foliation.",
+      "formula": "Differential Stress + Heat -> Preferred Mineral Alignment = Foliation.",
+      "common_mistake": "Equating sedimentary bedding with metamorphic foliation.",
+      "revision_summary": "Non-foliated metamorphic rocks include Marble (from limestone) and Quartzite (from sandstone)."
+    },
+    "is_pyq": true,
+    "pyq_year": 2018,
+    "source": "GATE 2018 Mining Engineering"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "HARD",
+    "question_text": "A drill core sample has a dry density of 2.60 g/cm3 and a solid grain particle density of 2.75 g/cm3. The total porosity (n) of this rock is approximately:",
+    "options": [
+      { "option_key": "A", "option_text": "3.55%", "is_correct": false },
+      { "option_key": "B", "option_text": "5.45%", "is_correct": true },
+      { "option_key": "C", "option_text": "7.80%", "is_correct": false },
+      { "option_key": "D", "option_text": "10.25%", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Rock physical properties and porosity relation",
+      "why_correct": "Porosity n = (1 - rho_dry / rho_grain) * 100% = (1 - 2.60 / 2.75) * 100% = (1 - 0.94545) * 100% = 5.45%.",
+      "why_wrong": "Option A calculates (2.75 - 2.60) / 2.60 without considering grain volume ratio properly.",
+      "formula": "n = 1 - (rho_dry / rho_grain)",
+      "common_mistake": "Dividing the density difference by dry density instead of grain density.",
+      "revision_summary": "High porosity typically reduces uniaxial compressive strength and increases water permeability."
+    },
+    "is_pyq": true,
+    "pyq_year": 2023,
+    "source": "GATE 2023 Mining Engineering"
+  },
+  {
+    "topic_id": 1,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "question_text": "Which mineral among the following exhibits the highest Mohs hardness?",
+    "options": [
+      { "option_key": "A", "option_text": "Orthoclase", "is_correct": false },
+      { "option_key": "B", "option_text": "Apatite", "is_correct": false },
+      { "option_key": "C", "option_text": "Corundum", "is_correct": true },
+      { "option_key": "D", "option_text": "Fluorite", "is_correct": false }
+    ],
+    "correct_answer": "C",
+    "explanation_json": {
+      "concept": "Mohs hardness comparison",
+      "why_correct": "Corundum (Al2O3, ruby and sapphire) has Mohs hardness 9, which is second only to Diamond (10).",
+      "why_wrong": "Fluorite is 4, Apatite is 5, and Orthoclase is 6.",
+      "formula": "Fluorite (4) < Apatite (5) < Orthoclase (6) < Corundum (9)",
+      "common_mistake": "Confusing Corundum with Quartz or Topaz.",
+      "revision_summary": "Corundum is widely used as an industrial abrasive due to its exceptional hardness (H=9)."
+    },
+    "is_pyq": false,
+    "source": "GATE Mining Question Bank"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "topic_id": 1,
+    "title": "Principles of Physical Geology & Mineralogy",
+    "resource_type": "NOTES",
+    "url": "https://gate.iitm.ac.in/syllabus",
+    "provider": "NPTEL IIT Kharagpur Mining Engineering",
+    "is_free": true,
+    "is_verified": true,
+    "description": "Standard lecture series and detailed notes on rock-forming minerals, Mohs hardness, and structural geology."
+  },
+  {
+    "topic_id": 8,
+    "title": "Surface Blast Design & Vibration Control Guide",
+    "resource_type": "FORMULA",
+    "url": "https://dgms.gov.in",
+    "provider": "DGMS Standards & CMPDI Blast Manual",
+    "is_free": true,
+    "is_verified": true,
+    "description": "DGMS circulars on permissible peak particle velocity (PPV) levels for structures and USBM vibration attenuation equations."
+  },
+  {
+    "topic_id": 36,
+    "title": "Subsurface Ventilation & Environmental Engineering",
+    "resource_type": "REFERENCE",
+    "url": "https://mvs.org",
+    "provider": "Malcolm J. McPherson Subsurface Ventilation",
+    "is_free": true,
+    "is_verified": true,
+    "description": "Comprehensive reference text on Atkinson's equation, fan characteristic curves, and network analysis."
+  }
+]

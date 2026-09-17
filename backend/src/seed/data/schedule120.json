@@ -1,0 +1,1111 @@
+[
+  {
+    "day_number": 1,
+    "title": "Day 1: Mining Fundamentals & Mineralogy",
+    "description": "Kickstart GATE MN prep with foundational mineralogy, rock-forming minerals, and Mohs hardness scale.",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 1, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 2,
+    "title": "Day 2: Structural Geology & Rock Formations",
+    "description": "Master geological structures: Anticlines, synclines, normal/reverse faults, joint patterns and unconformities.",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 2, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 3,
+    "title": "Day 3: Coal Geology, Seam Stratigraphy & Ore Bodies",
+    "description": "Gondwana vs Tertiary coalfields, proximate analysis, maceral groups, and hydrothermal ore deposits.",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 3, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 4,
+    "title": "Day 4: Mine Access - Shafts, Inclines & Adits",
+    "description": "Deposit factors governing choice of entry, vertical shaft vs decline trade-offs, and adit applicability.",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 4, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 5,
+    "title": "Day 5: Shaft Sinking Techniques & Special Methods",
+    "description": "Shaft sinking cycle: drilling, blasting, mucking, temporary & permanent lining, and freezing/caisson methods.",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 5, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 6,
+    "title": "Day 6: Rock Drilling Mechanics & Penetration Rates",
+    "description": "Rotary, percussive and rotary-percussive drilling, bit wear criteria, and penetration rate formulas.",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 6, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 7,
+    "title": "Day 7: Commercial Explosives & Initiation Systems",
+    "description": "ANFO, slurries, emulsions, nonel shock tubes, electronic delay detonators, and velocity of detonation (VOD).",
+    "week_number": 1,
+    "topics": [
+      { "topic_id": 7, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 8,
+    "title": "Day 8: Surface Blast Design & Ground Vibration (PPV)",
+    "description": "Calculation of burden, spacing, powder factor, subgrade drilling, and USBM vibration attenuation predictor equations.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 8, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 9,
+    "title": "Day 9: Mine Surveying - Levelling & Curvature Corrections",
+    "description": "Differential, profile and reciprocal levelling, combined earth curvature and refraction error calculations.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 9, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 10,
+    "title": "Day 10: Theodolite Traversing & Coordinate Geometry",
+    "description": "Latitude and departure calculations, closing error, Bowditch and Transit rule balancing of traverses.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 10, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 11,
+    "title": "Day 11: True Dip, Apparent Dip & 3-Point Borehole Problems",
+    "description": "Trigonometric relations of apparent vs true dip, strike direction, and borehole depth triangulation.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 11, "sequence": 1, "estimated_minutes": 55, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 12,
+    "title": "Day 12: Modern Surveying Tools: EDM, Total Station & GPS",
+    "description": "Phase shift vs pulse measurement in EDM, prism constants, satellite triangulation, and RTK GPS.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 12, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 13,
+    "title": "Day 13: Correlation Surveying & Gyro-Theodolite Alignment",
+    "description": "Connecting surface grid to underground workings via plumb wires: Weisbach triangle and Weiss method.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 13, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 14,
+    "title": "Day 14: Underground Curve Setting & Transition Geometry",
+    "description": "Simple circular curves by chord deflection and offsets, transition curves, and super-elevation on mine haul roads.",
+    "week_number": 2,
+    "topics": [
+      { "topic_id": 14, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 15,
+    "title": "Day 15: Stress, Strain & In-Situ Stress Fields",
+    "description": "Stress tensor, plane stress vs plane strain, principal stresses, and hydraulic fracturing measurement.",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 15, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 16,
+    "title": "Day 16: Rock Failure Criteria: Mohr-Coulomb & Hoek-Brown",
+    "description": "Cohesion, friction angle, failure envelope, and non-linear Hoek-Brown intact and rock mass criteria.",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 16, "sequence": 1, "estimated_minutes": 55, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 17,
+    "title": "Day 17: Intact Rock Strength Testing (UCS & Brazilian)",
+    "description": "Uniaxial Compressive Strength (UCS), indirect tensile strength by Brazilian disk test, and Point Load Index (Is50).",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 17, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 18,
+    "title": "Day 18: Triaxial Rock Testing & Elastic Moduli",
+    "description": "Confining pressure effects, deviatoric stress, Young's modulus, Poisson's ratio, and strain energy release rate.",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 18, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 19,
+    "title": "Day 19: Rock Mass Classification: RMR & Q-System",
+    "description": "Bieniawski 1989 RMR parameters and Barton's Q rating equation, RQD calculations and joint condition rating.",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 19, "sequence": 1, "estimated_minutes": 55, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 20,
+    "title": "Day 20: GSI & Rock Mass Modulus of Deformation",
+    "description": "Geological Strength Index for massive, blocky and disintegrated rock, and empirical deformation modulus equations.",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 20, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 21,
+    "title": "Day 21: Underground Coal Pillar Strength Formulas",
+    "description": "Obert-Duvall, Salamon-Munro, Bieniawski, and Sheorey pillar strength formulas for Indian coal seams.",
+    "week_number": 3,
+    "topics": [
+      { "topic_id": 21, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 22,
+    "title": "Day 22: Tributary Area Theory & Pillar Safety Factor",
+    "description": "Vertical in-situ overburden stress, extraction ratio (R), pillar stress concentration, and safety factor calculations.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 22, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 23,
+    "title": "Day 23: Roof Support Mechanics & Rock Bolting",
+    "description": "Full-column resin vs mechanical anchor bolts, suspension, beam building, keying mechanics, and pull testing.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 23, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 24,
+    "title": "Day 24: Powered Roof Supports & Surface Subsidence",
+    "description": "Chock-shield supports, setting load, yield load, support density, angle of draw, and subsidence basin profiles.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 24, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 25,
+    "title": "Day 25: Bord & Pillar Development & Panel System",
+    "description": "District layout, gallery width and pillar dimensions as per CMR 2017 regulations, ventilation connection.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 25, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 26,
+    "title": "Day 26: Depillaring with Stowing & Caving",
+    "description": "Line of extraction, diagonal line, caving vs hydraulic sand stowing, snooks, stooks, and rib extraction.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 25, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 27,
+    "title": "Day 27: Longwall Mining: Advancing vs Retreating",
+    "description": "Gate roads, tailgate, maingate, face ventilation, double-ended ranging drum shearer, and AFC conveyor.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 26, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 28,
+    "title": "Day 28: Thick Seam Mining Methods",
+    "description": "Multi-slice with artificial roofing, sublevel caving, hydraulic mining, and Blanzy method.",
+    "week_number": 4,
+    "topics": [
+      { "topic_id": 26, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 29,
+    "title": "Day 29: Underground Metal Mining - Open & Sublevel Stoping",
+    "description": "Stope preparation, ring drilling, slot raising, drawpoints, and blast hole stoping design.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 27, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 30,
+    "title": "Day 30: Supported Stoping (Cut & Fill, Square Set)",
+    "description": "Post-pillar cut and fill, hydraulic fill, cemented paste backfill, and waste rock stowing.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 28, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 31,
+    "title": "Day 31: Caving Methods: Block Caving & Sublevel Caving",
+    "description": "Undercutting level, production level, drawpoint layout, drawbells, caveability, and ore dilution.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 28, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 32,
+    "title": "Day 32: Open Pit Geometry & Stripping Ratio",
+    "description": "Bench height, bench width, berms, haul road gradient, overall slope angle, and instantaneous vs overall stripping ratio.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 29, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 33,
+    "title": "Day 33: Ultimate Pit Limit & Lerchs-Grossmann Algorithm",
+    "description": "Floating cone technique, block economic value matrix, graph theory based ultimate pit boundary determination.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 29, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 34,
+    "title": "Day 34: Slope Stability in Open Pit Mines",
+    "description": "Planar failure, wedge failure, circular failure (Bishop's simplified method), and tension crack effects.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 30, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 35,
+    "title": "Day 35: Mine Waste Dump Stability & Drainage",
+    "description": "External vs internal dumps, angle of repose, liquefaction, base failure, and toe drainage design.",
+    "week_number": 5,
+    "topics": [
+      { "topic_id": 30, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 36,
+    "title": "Day 36: Mine Hoisting - Drum Winders & Koepe Systems",
+    "description": "Cylindrical vs bi-cylindroconical drums, multi-rope friction winders, T1/T2 slip limits, and cage acceleration cycles.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 31, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 37,
+    "title": "Day 37: Wire Ropes & Headgear Mechanics",
+    "description": "Strand constructions, factor of safety regulations, fleet angle limitations, and sheaves design.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 31, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 38,
+    "title": "Day 38: Belt Conveyor Mechanics & Tractive Pull",
+    "description": "Euler's friction equation T1/T2 = e^(mu*theta), belt capacity, idler spacing, take-up systems, and motor power.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 32, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 39,
+    "title": "Day 39: Mine Locomotives & Tractive Effort",
+    "description": "Adhesion coefficient, tractive effort, ruling gradient, train resistance, and braking distance calculations.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 32, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 40,
+    "title": "Day 40: Shovel-Dumper Match & Productivity Sizing",
+    "description": "Bucket fill factor, cycle time, truck dispatching, match factor = (Nt * St) / (Ns * Tt), and fleet sizing.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 33, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 41,
+    "title": "Day 41: Walking Draglines in Open Cast Coal Mines",
+    "description": "Boom length, dump radius, digging depth, cycle time, rehandle percentage, and balancing diagrams.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 33, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 42,
+    "title": "Day 42: Continuous Surface Mining (BWE & Surface Miners)",
+    "description": "Bucket wheel excavators with shiftable conveyor systems, and highwall continuous miners.",
+    "week_number": 6,
+    "topics": [
+      { "topic_id": 33, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 43,
+    "title": "Day 43: Mine Atmosphere & Gas Characteristics",
+    "description": "Atmospheric composition, oxygen deficiency, firedamp (CH4), blackdamp, whitedamp (CO), and stinkdamp (H2S).",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 34, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 44,
+    "title": "Day 44: Gas Detection Instruments & Flame Safety Lamp",
+    "description": "Methanometer principles (Wheatstone bridge catalytic detector), multi-gas detectors, and testing flame caps.",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 34, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 45,
+    "title": "Day 45: Mine Climate & Geothermic Gradient",
+    "description": "Virgin rock temperature, adiabatic compression (9.8 deg C per km depth), psychrometric charts, and heat stress indexes.",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 35, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 46,
+    "title": "Day 46: Atkinson's Equation & Airway Resistance",
+    "description": "P = (k * S * Q^2) / A^3 = R * Q^2, friction factor k, equivalent orifice A = 0.385 / sqrt(R), and unit conversions.",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 36, "sequence": 1, "estimated_minutes": 55, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 47,
+    "title": "Day 47: Shock Losses & Air Power Consumption",
+    "description": "Bends, expansions, contractions, regulators, and Air Power = (P * Q) / 1000 kW and motor input power.",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 36, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 48,
+    "title": "Day 48: Natural Ventilation Pressure (NVP)",
+    "description": "Air density differences between downcast and upcast shafts, motive column, and thermodynamic cycles on P-V diagrams.",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 37, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 49,
+    "title": "Day 49: Mechanical Mine Fans & Fan Laws",
+    "description": "Centrifugal vs axial flow fans, guide vanes, diffuser evasee efficiency, and fan scaling laws with speed and diameter.",
+    "week_number": 7,
+    "topics": [
+      { "topic_id": 37, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 50,
+    "title": "Day 50: Fan Characteristic Curves & Operating Point",
+    "description": "Head-quantity curve, mine resistance curve intersection, stall zone in axial fans, and reversing arrangements.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 38, "sequence": 1, "estimated_minutes": 55, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 51,
+    "title": "Day 51: Fans in Series & Fans in Parallel",
+    "description": "Combined pressure additions in series, combined quantity additions in parallel, and booster fan placement.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 38, "sequence": 1, "estimated_minutes": 55, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 52,
+    "title": "Day 52: Ventilation Network Analysis (Kirchhoff's Laws)",
+    "description": "First law (Junction balance sigma Q = 0) and Second law (Mesh balance sigma P = 0), splitting of airflow.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 39, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 53,
+    "title": "Day 53: Hardy Cross Iterative Technique for Mine Circuits",
+    "description": "Successive mesh flow corrections delta Q = - sigma(R * Q * |Q|) / (2 * sigma(R * |Q|)) in complex mine networks.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 39, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 54,
+    "title": "Day 54: Spontaneous Combustion of Coal & Indexing",
+    "description": "Mechanism of coal oxidation, crossing point temperature (CPT), ignition temperature, and Graham's ratio.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 40, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 55,
+    "title": "Day 55: Mine Fire Control & Stoppings Sealing",
+    "description": "Fire fighting, nitrogen inertization, explosion-proof isolation stoppings, and fire gas sampling.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 40, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 56,
+    "title": "Day 56: Coward's Diagram & Mine Fire Explosibility",
+    "description": "Interpretation of Coward flammability triangles (O2, CH4, CO), inert gas addition, and safe re-opening guidelines.",
+    "week_number": 8,
+    "topics": [
+      { "topic_id": 41, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 57,
+    "title": "Day 57: Firedamp Explosions & Ignition Mechanics",
+    "description": "Lower & upper explosive limits of CH4 (5% - 15%), ignition sources, frictional sparking, and methane layering.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 41, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 58,
+    "title": "Day 58: Coal Dust Explosions & Barrier Defenses",
+    "description": "Volatile matter threshold, dispersibility, stone dust barriers (concentrated and distributed), and water trough barriers.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 41, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 59,
+    "title": "Day 59: Mine Inundation Hazards & Water Inrush Precautions",
+    "description": "Working under water bodies, statutory safety barrier distances, advance exploratory boring, and burnside apparatus.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 42, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 60,
+    "title": "Day 60: Underground Water Dams & Bulkheads",
+    "description": "Spherical, cylindrical and straight wedge concrete dam design, hydrostatic pressure loads, and grouting.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 42, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 61,
+    "title": "Day 61: Respirable Dust Standards & Gravimetric Sampling",
+    "description": "Size fractions, PM10, PM2.5, cyclonic elutriation, statutory limits of free silica in coal/metal mines.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 43, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 62,
+    "title": "Day 62: Mine Noise, Water & Soil Pollution Standards",
+    "description": "Decibel addition, Leq calculations, acid mine drainage (AMD) formation and neutralization, and soil stabilization.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 43, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 63,
+    "title": "Day 63: Environmental Impact Assessment & Reclamation",
+    "description": "Baseline data collection, air dispersion modeling, EMP implementation, post-mining land use, and revegetation.",
+    "week_number": 9,
+    "topics": [
+      { "topic_id": 44, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 64,
+    "title": "Day 64: Mineral Sampling Techniques & Sample Errors",
+    "description": "Channel, grab, core, chip sampling, Gy's sampling theory, fundamental error, and coning and quartering.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 45, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 65,
+    "title": "Day 65: Grade Calculation & Reserve Estimation Methods",
+    "description": "Weighted average grade, polygonal method, triangular method, inverse distance weighting (IDW), and Kriging concepts.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 45, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 66,
+    "title": "Day 66: Time Value of Money & Net Present Value (NPV)",
+    "description": "Cash flows, discount rates, formula NPV = sigma (CF_t / (1+r)^t) - C_0, and profitability index.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 46, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 67,
+    "title": "Day 67: Internal Rate of Return & Payback Period",
+    "description": "IRR calculation via interpolation, discounted payback period, depreciation (straight-line, declining balance), and depletion allowance.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 46, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 68,
+    "title": "Day 68: Break-Even Stripping Ratio & Pit Limits",
+    "description": "Formula BESR = (Value of Coal - Cost of Mining) / Cost of Waste Stripping, and maximum allowable stripping ratio.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 47, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 69,
+    "title": "Day 69: Economic Cut-Off Grade Determination (Lane's Theory)",
+    "description": "Mining, processing and marketing capacities, cut-off grade formula C = c / (P - s) * recovery, and optimum scheduling.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 47, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 70,
+    "title": "Day 70: Mine Production Scheduling & Ore-Waste Blending",
+    "description": "Stockpile blending, grade stabilization equations, and multi-period scheduling constraints.",
+    "week_number": 10,
+    "topics": [
+      { "topic_id": 48, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 71,
+    "title": "Day 71: Linear Programming in Mine Planning",
+    "description": "Formulating objective functions for profit maximization, decision variables, slack variables, and Simplex method.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 49, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 72,
+    "title": "Day 72: Transportation Models & Dual Simplex",
+    "description": "North-West corner rule, Vogel's approximation method (VAM), MODI stepping-stone method for coal dispatch.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 49, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 73,
+    "title": "Day 73: Project Management: CPM Critical Path Analysis",
+    "description": "Activity on node (AON), forward and backward passes, earliest/latest start and finish, total float, and free float.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 50, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 74,
+    "title": "Day 74: PERT Analysis & Project Completion Probability",
+    "description": "Beta distribution, expected duration te = (a + 4m + b)/6, variance sigma^2 = ((b-a)/6)^2, and z-score probability.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 50, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 75,
+    "title": "Day 75: Matrices, Rank & System of Linear Equations",
+    "description": "Row operations, determinant, rank, consistency conditions, and unique/infinite/no solution tests.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 51, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 76,
+    "title": "Day 76: Eigenvalues, Eigenvectors & Cayley-Hamilton Theorem",
+    "description": "Characteristic polynomial, properties of eigenvalues of symmetric/orthogonal matrices, and diagonalisation.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 51, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 77,
+    "title": "Day 77: Differential Calculus & Maxima-Minima",
+    "description": "Taylor series, partial differentiation, Jacobian matrix, saddle points, and constrained optimization via Lagrange multipliers.",
+    "week_number": 11,
+    "topics": [
+      { "topic_id": 52, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 78,
+    "title": "Day 78: Vector Calculus: Gradient, Divergence & Curl",
+    "description": "Directional derivatives, unit normal vectors, Gauss divergence theorem, and Stokes theorem applications in engineering.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 52, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 79,
+    "title": "Day 79: Probability Fundamentals & Bayes' Theorem",
+    "description": "Conditional probability, independence, Bayes formula for diagnostic testing, and combinations/permutations.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 53, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 80,
+    "title": "Day 80: Probability Distributions (Binomial, Poisson, Normal)",
+    "description": "Probability mass and density functions, mean, variance, standard normal distribution (Z-tables), and central limit theorem.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 53, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 81,
+    "title": "Day 81: Numerical Solutions of Non-Linear Equations",
+    "description": "Bisection method, Regula-Falsi, Newton-Raphson formula x_(n+1) = x_n - f(x_n)/f'(x_n), and order of convergence.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 54, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 82,
+    "title": "Day 82: Numerical Integration: Trapezoidal & Simpson's Rules",
+    "description": "Trapezoidal rule error O(h^2), Simpson's 1/3 and 3/8 rule error O(h^4) for ore volume and area estimations.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 54, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 83,
+    "title": "Day 83: Quantitative Aptitude: Work, Time, Speed & Pipes",
+    "description": "Standard shortcut methods for time and work, pipes and cisterns, relative speed, and distance problems.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 55, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 84,
+    "title": "Day 84: Percentages, Profit-Loss & Simple/Compound Interest",
+    "description": "High-yield calculation techniques, weighted ratios, mixtures and alligations.",
+    "week_number": 12,
+    "topics": [
+      { "topic_id": 55, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 85,
+    "title": "Day 85: GATE Spatial Aptitude & Paper Folding / Rotation",
+    "description": "2D and 3D rotation, mirrored views, pattern folding, and spatial symmetry questions introduced in modern GATE exams.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 56, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 86,
+    "title": "Day 86: Verbal Ability & Critical Reasoning for GATE",
+    "description": "Reading comprehension, grammatical correctness, sentence completion, and logical deductions.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 56, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 87,
+    "title": "Day 87: Mining Geology & Development - Combined Review",
+    "description": "Cross-topic integration: Structural geology, shaft selection, drilling formulas, and blast vibration equations.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 1, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 8, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 88,
+    "title": "Day 88: Advanced Surveying & Borehole Dip Calculations Sprint",
+    "description": "High-intensity calculation practice for 3-point borehole problems, true/apparent dip, and coordinate balancing.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 11, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 13, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 89,
+    "title": "Day 89: Geomechanics & Rock Failure Criteria Mastery",
+    "description": "Mohr-Coulomb circle construction, failure plane angles theta = 45 + phi/2, and Hoek-Brown stress computations.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 16, "sequence": 1, "estimated_minutes": 40, "is_required": true },
+      { "topic_id": 17, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 90,
+    "title": "Day 90: RMR, Q-System & Pillar Design Sizing",
+    "description": "Correlating RMR with support requirements, Bieniawski pillar equations, and safety factor optimization.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 19, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 21, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 91,
+    "title": "Day 91: Tributary Area Theory & Roof Bolting Sizing",
+    "description": "Numerical calculations on pillar stress concentration and bolt spacing vs roof rock load height.",
+    "week_number": 13,
+    "topics": [
+      { "topic_id": 22, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 23, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 92,
+    "title": "Day 92: Bord & Pillar vs Longwall Face Mechanics",
+    "description": "Depillaring lines, powered support yield ratings, and AFC load capacity numerical analysis.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 25, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 26, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 93,
+    "title": "Day 93: Underground Metal Stoping Methods Comparison",
+    "description": "Selection matrix for sublevel stoping, cut-and-fill, and block caving based on ore geometry, dip, and strength.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 27, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 28, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 94,
+    "title": "Day 94: Open Pit Stripping Ratios & Slope Stability",
+    "description": "Bench geometry calculation, overall pit slope factor of safety, and waste dump stability checks.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 29, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 30, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 95,
+    "title": "Day 95: Winding Systems & HEMM Productivity Formulas",
+    "description": "Koepe winder slip criteria, drum payload, shovel-dumper match factor, and dragline rehandle calculations.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 31, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 33, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 96,
+    "title": "Day 96: Conveyors & Locomotive Haulage Engineering",
+    "description": "Belt drive tensions T1, T2, motor power calculations, and locomotive trailing load on gradients.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 32, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 97,
+    "title": "Day 97: Atkinson's Law & Resistance Calculations",
+    "description": "Airway resistance in series and parallel, equivalent orifice, and regulator sizing.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 36, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 98,
+    "title": "Day 98: Fan Laws & Series-Parallel Operation",
+    "description": "Fan characteristic curves, change in fan speed/blade angle, and series vs parallel operating points.",
+    "week_number": 14,
+    "topics": [
+      { "topic_id": 37, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 38, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 99,
+    "title": "Day 99: Ventilation Networks & Kirchhoff's Law Mastery",
+    "description": "Solving 2-mesh and 3-mesh mine ventilation networks using iterative Hardy Cross method.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 39, "sequence": 1, "estimated_minutes": 50, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 100,
+    "title": "Day 100: Mine Fires, Coward Diagram & Explosibility Limits",
+    "description": "Graham's ratio interpretation, Coward flammability triangle plotting, and safe re-opening protocols.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 40, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 41, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 101,
+    "title": "Day 101: Inundation Barriers & Environmental Compliance",
+    "description": "Water dam pressure calculation, respirable dust concentration, and decibel sound level addition.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 42, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 43, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 102,
+    "title": "Day 102: Mineral Economics: NPV, IRR & Depreciation",
+    "description": "Discounted cash flow modeling, straight-line and double-declining balance depreciation, and project selection.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 46, "sequence": 1, "estimated_minutes": 45, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 103,
+    "title": "Day 103: Cut-Off Grade, BESR & Production Scheduling",
+    "description": "Lane's cut-off grade equations, break-even stripping ratio, and blending linear programs.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 47, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 48, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 104,
+    "title": "Day 104: Linear Programming & CPM/PERT Network Floats",
+    "description": "Formulating mining simplex problems, finding critical path, free float, and independent float.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 49, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 50, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 105,
+    "title": "Day 105: Engineering Mathematics Intensive Problem Solving",
+    "description": "Eigenvalues, maxima-minima, vector calculus theorems, and Simpson's numerical integration practice.",
+    "week_number": 15,
+    "topics": [
+      { "topic_id": 51, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 54, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 106,
+    "title": "Day 106: Full Syllabus Revision - Geology & Blasting",
+    "description": "Rapid formula recall and high-yield question solving across Mining Geology, Drivages and Blast Design.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 1, "sequence": 1, "estimated_minutes": 25, "is_required": true },
+      { "topic_id": 8, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 107,
+    "title": "Day 107: Full Syllabus Revision - Surveying & Correlation",
+    "description": "Leveling, traversing, Weisbach triangle, and borehole dip numerical review.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 10, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 11, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 108,
+    "title": "Day 108: Full Syllabus Revision - Rock Mechanics & Ground Control",
+    "description": "UCS, failure criteria, RMR, pillar strength formulas, and tributary area calculations review.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 16, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 21, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 109,
+    "title": "Day 109: Full Syllabus Revision - Mining Methods & Support",
+    "description": "Bord & Pillar depillaring, longwall shields, metal stoping classification, and rock bolting.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 23, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 27, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 110,
+    "title": "Day 110: Full Syllabus Revision - Surface Mining & Machinery",
+    "description": "Stripping ratio, slope stability, drum/Koepe winders, conveyor tensions, and shovel-dumper matching.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 29, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 31, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 111,
+    "title": "Day 111: Full Syllabus Revision - Ventilation & Gas Dynamics",
+    "description": "Atkinson's equation, fan laws, series/parallel combinations, and network analysis review.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 36, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 38, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 112,
+    "title": "Day 112: Full Syllabus Revision - Hazards & Mine Environment",
+    "description": "Spontaneous combustion, Coward diagram, water dams, and respirable dust compliance review.",
+    "week_number": 16,
+    "topics": [
+      { "topic_id": 40, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 41, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 113,
+    "title": "Day 113: Full Syllabus Revision - Economics, Planning & Systems",
+    "description": "NPV, IRR, Lane's cut-off grade, simplex method, and PERT/CPM calculations review.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 46, "sequence": 1, "estimated_minutes": 35, "is_required": true },
+      { "topic_id": 50, "sequence": 2, "estimated_minutes": 35, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 114,
+    "title": "Day 114: Full Syllabus Revision - Engineering Mathematics & Aptitude",
+    "description": "Linear algebra, probability, numerical integration, and quantitative shortcuts review.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 51, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 55, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 115,
+    "title": "Day 115: High-Yield GATE MN PYQ Sprint (2018-2020)",
+    "description": "Solve selected past GATE MN questions under timed conditions and review detailed explanations.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 11, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 36, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 116,
+    "title": "Day 116: High-Yield GATE MN PYQ Sprint (2021-2023)",
+    "description": "Deep-dive into multi-concept numerical questions in Geomechanics, Ventilation, and Economics.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 16, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 22, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 117,
+    "title": "Day 117: High-Yield GATE MN PYQ Sprint (2024-2025)",
+    "description": "Solve the most recent official papers and identify evolving problem styles and traps.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 31, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 46, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 118,
+    "title": "Day 118: Mistake Notebook Consolidation & Error Analysis",
+    "description": "Revisit your personal Mistake Book: Clear unresolved M1-M6 mistakes and re-attempt problem types.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 19, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 39, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 119,
+    "title": "Day 119: Master Formula Book Final Polish",
+    "description": "Comprehensive review of all mining formulas, units, dimensional consistency, and variable definitions.",
+    "week_number": 17,
+    "topics": [
+      { "topic_id": 8, "sequence": 1, "estimated_minutes": 30, "is_required": true },
+      { "topic_id": 36, "sequence": 2, "estimated_minutes": 30, "is_required": true }
+    ]
+  },
+  {
+    "day_number": 120,
+    "title": "Day 120: Exam-Day Mindset & Strategy Consolidation",
+    "description": "Final review, time management strategy (Round 1 easy, Round 2 numerical, Round 3 verification), and congratulations!",
+    "week_number": 18,
+    "topics": [
+      { "topic_id": 56, "sequence": 1, "estimated_minutes": 40, "is_required": true }
+    ]
+  }
+]

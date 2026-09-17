@@ -1,0 +1,20 @@
+{
+  "name": "gate-mining-engineering-120-day-platform",
+  "version": "1.0.0",
+  "description": "Comprehensive 120-Day Learning Platform for GATE Mining Engineering (MN) Preparation",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "seed": "cd backend && npm run seed",
+    "validate-content": "cd backend && npm run validate-content",
+    "test": "cd backend && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "GATE Mining Engineering Master Team",
+  "license": "ISC"
+}

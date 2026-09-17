@@ -1,0 +1,106 @@
+[
+  {
+    "topic_id": 1,
+    "subject_id": 1,
+    "chapter_id": 1,
+    "type": "MCQ",
+    "difficulty": "EASY",
+    "pyq_year": 2024,
+    "is_official": true,
+    "source": "GATE 2024 Mining Engineering Official Paper",
+    "question_text": "The mineral gypsum exhibits a hardness on the Mohs hardness scale equal to:",
+    "options": [
+      { "option_key": "A", "option_text": "1", "is_correct": false },
+      { "option_key": "B", "option_text": "2", "is_correct": true },
+      { "option_key": "C", "option_text": "3", "is_correct": false },
+      { "option_key": "D", "option_text": "4", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Mohs hardness standard minerals",
+      "why_correct": "Talc is 1 and Gypsum is 2 on Mohs scale. Fingernail (H~2.5) can scratch gypsum.",
+      "why_wrong": "1 is Talc, 3 is Calcite, 4 is Fluorite.",
+      "formula": "Talc (1), Gypsum (2), Calcite (3)",
+      "common_mistake": "Swapping Talc and Gypsum.",
+      "revision_summary": "Gypsum (CaSO4.2H2O) is a hydrous calcium sulfate."
+    }
+  },
+  {
+    "topic_id": 1,
+    "subject_id": 1,
+    "chapter_id": 1,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "pyq_year": 2023,
+    "is_official": true,
+    "source": "GATE 2023 Mining Engineering Official Paper",
+    "question_text": "A rock sample has a dry density of 2.60 g/cm3 and a grain particle density of 2.75 g/cm3. The total porosity (in %) is:",
+    "options": [
+      { "option_key": "A", "option_text": "3.55", "is_correct": false },
+      { "option_key": "B", "option_text": "5.45", "is_correct": true },
+      { "option_key": "C", "option_text": "7.80", "is_correct": false },
+      { "option_key": "D", "option_text": "10.25", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Rock porosity calculation",
+      "why_correct": "Porosity n = (1 - rho_d / rho_g) * 100% = (1 - 2.60 / 2.75) * 100% = 5.45%.",
+      "why_wrong": "Option A, C, and D derive from incorrect formulas.",
+      "formula": "n = (1 - rho_dry / rho_grain) * 100%",
+      "common_mistake": "Using (rho_g - rho_d) / rho_d instead of dividing by rho_grain.",
+      "revision_summary": "Sandstone usually has porosity between 5% to 25%."
+    }
+  },
+  {
+    "topic_id": 8,
+    "subject_id": 1,
+    "chapter_id": 3,
+    "type": "MCQ",
+    "difficulty": "HARD",
+    "pyq_year": 2022,
+    "is_official": true,
+    "source": "GATE 2022 Mining Engineering Official Paper",
+    "question_text": "In a surface blast with burden B = 3.5 m, spacing S = 4.0 m, bench height H = 12 m, the total explosive loaded in one hole is 90 kg. If rock density is 2.5 t/m3, the powder factor in t/kg is:",
+    "options": [
+      { "option_key": "A", "option_text": "3.85", "is_correct": false },
+      { "option_key": "B", "option_text": "4.67", "is_correct": true },
+      { "option_key": "C", "option_text": "5.25", "is_correct": false },
+      { "option_key": "D", "option_text": "6.12", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Powder factor calculation in opencast bench blasting",
+      "why_correct": "Volume = B * S * H = 3.5 * 4.0 * 12 = 168 m3. Tonnage = 168 * 2.5 = 420 tonnes. PF = 420 / 90 = 4.667 t/kg.",
+      "why_wrong": "Option A divides volume directly by explosive weight (168/90 = 1.87). Option C and D use wrong burden-spacing factors.",
+      "formula": "PF (t/kg) = (B * S * H * rock_density) / Explosive_weight",
+      "common_mistake": "Forgetting to multiply by rock density to convert volume into tonnes.",
+      "revision_summary": "Higher powder factor means more rock broken per unit mass of explosive."
+    }
+  },
+  {
+    "topic_id": 36,
+    "subject_id": 4,
+    "chapter_id": 16,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "pyq_year": 2021,
+    "is_official": true,
+    "source": "GATE 2021 Mining Engineering Official Paper",
+    "question_text": "Air flows through a mine airway with a resistance R = 0.5 Ns2/m8. If the ventilation pressure drop is 450 Pa, the airflow quantity Q in m3/s is:",
+    "options": [
+      { "option_key": "A", "option_text": "22.5", "is_correct": false },
+      { "option_key": "B", "option_text": "30.0", "is_correct": true },
+      { "option_key": "C", "option_text": "35.2", "is_correct": false },
+      { "option_key": "D", "option_text": "45.0", "is_correct": false }
+    ],
+    "correct_answer": "B",
+    "explanation_json": {
+      "concept": "Square law of airflow in mine airways",
+      "why_correct": "P = R * Q^2 => Q = sqrt(P / R) = sqrt(450 / 0.5) = sqrt(900) = 30 m3/s.",
+      "why_wrong": "Option A calculates P * R. Option D calculates P / 10.",
+      "formula": "Q = sqrt(P / R)",
+      "common_mistake": "Taking P = R * Q instead of R * Q^2.",
+      "revision_summary": "Air quantity varies with the square root of ventilation pressure drop."
+    }
+  }
+]

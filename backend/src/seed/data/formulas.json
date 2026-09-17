@@ -1,0 +1,101 @@
+[
+  {
+    "topic_id": 1,
+    "subject_id": 1,
+    "title": "Specific Gravity of Rock Specimen",
+    "formula_latex": "G = \\frac{W_{dry}}{W_{dry} - W_{submerged}}",
+    "variable_meanings": "W_dry = Dry weight of rock specimen in air; W_submerged = Apparent submerged weight of specimen in water.",
+    "units": "Dimensionless (ratio)",
+    "when_to_use": "When determining relative density or porosity of rock cores from Archimedes immersion tests.",
+    "common_traps": "Denominator must be (W_dry - W_submerged), which represents the buoyant force (weight of displaced water), not W_submerged alone.",
+    "example_problem": "W_dry = 250 g, W_submerged = 150 g => G = 250 / (250 - 150) = 2.50."
+  },
+  {
+    "topic_id": 8,
+    "subject_id": 1,
+    "title": "USBM Ground Vibration Attenuation Law (PPV)",
+    "formula_latex": "PPV = K \\left(\\frac{D}{\\sqrt{Q}}\\right)^{-\\beta}",
+    "variable_meanings": "PPV = Peak Particle Velocity (mm/s); D = Distance from blast to structure (m); Q = Maximum explosive charge per delay (kg); K, beta = Site geological transmission constants; (D / sqrt(Q)) = Scaled distance.",
+    "units": "PPV in mm/s, D in m, Q in kg, Scaled distance in m/kg^0.5",
+    "when_to_use": "Calculating maximum allowable blast charge per delay to ensure vibration limits at surface structures are not exceeded.",
+    "common_traps": "Q is explosive charge per delay (delay interval), NOT the total explosive charge of the entire round!",
+    "example_problem": "D = 100 m, Q = 25 kg => Scaled Distance = 100 / sqrt(25) = 20 m/kg^0.5."
+  },
+  {
+    "topic_id": 11,
+    "subject_id": 1,
+    "title": "Apparent Dip to True Dip Trigonometric Relation",
+    "formula_latex": "\\tan(\\alpha) = \\tan(\\theta) \\cos(\\gamma)",
+    "variable_meanings": "alpha = Apparent dip angle; theta = True dip angle; gamma = Angle between true dip direction and apparent dip direction.",
+    "units": "Angles in degrees",
+    "when_to_use": "When converting between apparent dip measured in a roadway crosscut and the true dip of the geological seam.",
+    "common_traps": "True dip (theta) is always greater than or equal to any apparent dip (alpha). If calculated alpha > theta, the formula was applied inverted.",
+    "example_problem": "True dip theta = 30 deg, gamma = 45 deg => tan(alpha) = tan(30) * cos(45) = 0.5774 * 0.7071 = 0.4082 => alpha = 22.2 deg."
+  },
+  {
+    "topic_id": 16,
+    "subject_id": 2,
+    "title": "Mohr-Coulomb Shear Failure Criterion",
+    "formula_latex": "\\tau = c + \\sigma_n \\tan(\\phi)",
+    "variable_meanings": "tau = Shear stress at failure (MPa); c = Cohesion (MPa); sigma_n = Normal stress acting on failure plane (MPa); phi = Angle of internal friction (degrees).",
+    "units": "tau, c, sigma_n in MPa; phi in degrees",
+    "when_to_use": "Determining shear strength and stability of rock joints, rock slopes, or underground pillar failure envelopes.",
+    "common_traps": "The angle of the failure plane with the major principal stress plane is (45 + phi/2), not just phi.",
+    "example_problem": "c = 10 MPa, phi = 30 deg, sigma_n = 20 MPa => tau = 10 + 20 * tan(30) = 10 + 20 * 0.577 = 21.55 MPa."
+  },
+  {
+    "topic_id": 22,
+    "subject_id": 2,
+    "title": "Tributary Area Theory (Pillar Stress & Extraction Ratio)",
+    "formula_latex": "\\sigma_p = \\frac{\\sigma_v}{1 - R} = \\gamma H \\left(\\frac{w + B}{w}\\right)^2",
+    "variable_meanings": "sigma_p = Average vertical stress on coal pillar (MPa); sigma_v = In-situ vertical overburden stress (MPa) = gamma * H; R = Areal extraction ratio; w = Pillar width (m); B = Gallery width (m); H = Depth from surface (m); gamma = Unit weight of overburden (MN/m3).",
+    "units": "sigma_p, sigma_v in MPa; w, B, H in meters",
+    "when_to_use": "Estimating vertical stress concentration on square or rectangular coal pillars in Bord and Pillar workings.",
+    "common_traps": "Ensure w is the pillar core width and (w+B) is the center-to-center pillar distance. R = 1 - (w / (w+B))^2 for square pillars.",
+    "example_problem": "sigma_v = 5 MPa, R = 0.6 => sigma_p = 5 / (1 - 0.6) = 12.5 MPa."
+  },
+  {
+    "topic_id": 36,
+    "subject_id": 4,
+    "title": "Atkinson's Law of Mine Ventilation Pressure",
+    "formula_latex": "P = R Q^2 = \\frac{k S Q^2}{A^3} = \\frac{k O L Q^2}{A^3}",
+    "variable_meanings": "P = Frictional pressure drop (Pa); R = Airway resistance (Ns^2/m^8); k = Friction factor (Ns^2/m^4); S = Rubbing surface = O * L (m2); O = Roadway perimeter (m); L = Roadway length (m); A = Cross-sectional area (m2); Q = Airflow volume (m3/s).",
+    "units": "P in Pa (N/m2), R in Ns^2/m^8, Q in m3/s, A in m2, S in m2",
+    "when_to_use": "Calculating ventilation pressure losses, fan head requirements, and equivalent orifices for mine airways.",
+    "common_traps": "Notice A is raised to the 3rd power in the denominator! If area is halved, resistance increases by 2^3 = 8 times.",
+    "example_problem": "R = 0.2 Ns^2/m^8, Q = 50 m3/s => P = 0.2 * 50^2 = 500 Pa."
+  },
+  {
+    "topic_id": 36,
+    "subject_id": 4,
+    "title": "Mine Air Power & Fan Input Power",
+    "formula_latex": "P_{air} = \\frac{P \\times Q}{1000} \\quad [\\text{kW}], \\quad P_{motor} = \\frac{P_{air}}{\\eta_{fan} \\times \\eta_{motor}}",
+    "variable_meanings": "P_air = Useful air power output (kW); P = Total fan pressure (Pa); Q = Total air quantity handled (m3/s); eta_fan = Fan mechanical efficiency; eta_motor = Motor electrical efficiency.",
+    "units": "Power in kW, P in Pa, Q in m3/s",
+    "when_to_use": "Sizing mine ventilation fan motors and estimating electrical energy consumption costs.",
+    "common_traps": "Do not forget to divide by 1000 to convert Watts into kW. When efficiencies are given, divide by efficiency to find input power.",
+    "example_problem": "P = 1000 Pa, Q = 100 m3/s, eta = 0.8 => P_air = (1000 * 100)/1000 = 100 kW. Motor Power = 100 / 0.8 = 125 kW."
+  },
+  {
+    "topic_id": 46,
+    "subject_id": 5,
+    "title": "Net Present Value (NPV) of Mining Project",
+    "formula_latex": "NPV = \\sum_{t=1}^{N} \\frac{CF_t}{(1 + r)^t} - C_0",
+    "variable_meanings": "CF_t = Net annual cash inflow in year t ($ or Rs); r = Discount rate / Cost of capital (decimal); C_0 = Initial capital investment / CAPEX; N = Mine operating life (years).",
+    "units": "Currency (Rs / $)",
+    "when_to_use": "Evaluating mine feasibility, investment decisions, and comparing alternative extraction options. Project is viable if NPV > 0.",
+    "common_traps": "Year 0 capital cost C_0 is not discounted (or discounted with t=0 where (1+r)^0 = 1).",
+    "example_problem": "C_0 = 100 Cr, CF = 40 Cr/yr for 3 years at r = 10% => NPV = 40/1.1 + 40/1.21 + 40/1.331 - 100 = 36.36 + 33.06 + 30.05 - 100 = -0.53 Cr."
+  },
+  {
+    "topic_id": 47,
+    "subject_id": 5,
+    "title": "Break-Even Stripping Ratio (BESR)",
+    "formula_latex": "BESR = \\frac{V - C_{mining}}{C_{stripping}}",
+    "variable_meanings": "V = Value of 1 tonne of mineral/coal at pit top; C_mining = Production/mining cost of 1 tonne of ore; C_stripping = Cost to excavate, haul and dump 1 m3 of overburden waste.",
+    "units": "m3 of waste per tonne of ore (m3/t)",
+    "when_to_use": "Determining the economic depth limit where opencast mining ceases to be profitable and underground mining should be considered.",
+    "common_traps": "Make sure units match (cost per tonne of ore vs cost per m3 of waste).",
+    "example_problem": "V = 1500 Rs/t, C_mining = 500 Rs/t, C_stripping = 200 Rs/m3 => BESR = (1500 - 500) / 200 = 5.0 m3/tonne."
+  }
+]
