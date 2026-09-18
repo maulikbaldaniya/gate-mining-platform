@@ -87,7 +87,7 @@ export default function TopicDetails() {
             8-Level Structured Learning Progression
           </span>
           <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>
-            Hinglish Concept + English Technical Precision
+            ગુજરાતી Concept + English Technical Precision
           </span>
         </div>
 

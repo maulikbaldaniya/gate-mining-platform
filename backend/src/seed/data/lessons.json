@@ -2,63 +2,63 @@
   {
     "topic_id": 1,
     "title": "Minerals & Rock Formation",
-    "overview": "Complete conceptual breakdown of minerals, Mohs hardness scale, rock cycle, and rock-forming mineral groups.",
+    "overview": "Minerals, Mohs hardness scale, rock cycle, અને rock-forming mineral groups નું સંપૂર્ણ conceptual breakdown.",
     "estimated_read_time": 25,
     "sections": [
       {
         "level_number": 1,
         "section_type": "CONCEPT_INTRO",
-        "title": "Level 1: What is this topic? (Ye Topic Kya Hai?)",
-        "content_text": "Is topic me hum minerals aur rocks ke basic fundamentals samajhte hain. Mineral ek naturally occurring, inorganic solid substance hota hai jiska ek definite chemical composition aur ordered crystalline atomic structure hota hai. Rock do ya do se zyada minerals ka aggregate (mixture) hota hai. GATE Mining Engineering me har saal Mohs hardness scale, mineral identification, aur rock classification par direct factual aur conceptual questions aate hain.",
+        "title": "Level 1: What is this topic? (આ ટોપિક શું છે?)",
+        "content_text": "આ ટોપિકમાં આપણે minerals અને rocks ના મૂળભૂત fundamentals સમજીશું. Mineral એક naturally occurring, inorganic solid પદાર્થ છે જેનું એક ચોક્કસ chemical composition અને ordered crystalline atomic structure હોય છે. Rock એ બે કે તેથી વધુ minerals નો aggregate (મિશ્રણ) છે. GATE Mining Engineering માં દર વર્ષે Mohs hardness scale, mineral identification, અને rock classification પર સીધા factual અને conceptual પ્રશ્નો પૂછાય છે.",
         "order_index": 1
       },
       {
         "level_number": 2,
         "section_type": "IMPORTANCE",
-        "title": "Level 2: Why does it matter? (GATE aur Mining me iska kya role hai?)",
-        "content_text": "Mining Engineers ke liye rock aur mineral properties samajhna sabse pehla step hai. Jab hum blasting karte hain, shaft sink karte hain, ya tunnels banate hain, to cutting speed, bit wear (drill bit ka ghisna), explosive energy consumption, aur roof stability sidhe mineralogy (jaise quartz content) aur rock type (igneous, sedimentary, metamorphic) par depend karti hai. GATE exam me Mohs hardness sequence aur rock classification standard scoring questions hote hain.",
+        "title": "Level 2: Why does it matter? (GATE અને Mining માં આનો શું રોલ છે?)",
+        "content_text": "Mining Engineers માટે rock અને mineral properties સમજવી સૌથી પહેલું પગથિયું છે. જ્યારે આપણે blasting કરીએ છીએ, shaft sink કરીએ છીએ, કે tunnels બનાવીએ છીએ, ત્યારે cutting speed, bit wear (drill bit નો ઘસારો), explosive energy consumption, અને roof stability સીધી રીતે mineralogy (જેમ કે quartz content) અને rock type (igneous, sedimentary, metamorphic) પર નિર્ભર કરે છે. GATE exam માં Mohs hardness sequence અને rock classification સ્ટાન્ડર્ડ સ્કોરિંગ પ્રશ્નો હોય છે.",
         "order_index": 2
       },
       {
         "level_number": 3,
         "section_type": "BASIC_CONCEPTS",
-        "title": "Level 3: Basic Concepts (Mool Bhoot Siddhant)",
-        "content_text": "1. Rock Types:\n- Igneous Rocks: Magma ya lava ke cooling aur solidification se banti hain (e.g., Granite, Basalt, Gabbro).\n- Sedimentary Rocks: Pre-existing rocks ke weathering, deposition, compaction aur cementation se banti hain. Coal seams hamesha sedimentary rocks me paye jaate hain (e.g., Sandstone, Shale, Limestone).\n- Metamorphic Rocks: High temperature aur pressure ke prabhav se existing rocks ka structure aur mineralogy change hone par banti hain (e.g., Quartzite, Marble, Gneiss).\n\n2. Mohs Hardness Scale (Relative Scratch Hardness):\n1: Talc (Softest)\n2: Gypsum\n3: Calcite\n4: Fluorite\n5: Apatite\n6: Orthoclase Feldspar\n7: Quartz\n8: Topaz\n9: Corundum\n10: Diamond (Hardest)\n\nEasy Memory Trick: 'The Girls Can Flirt And Other Queer Things Can Do' (T-G-C-F-A-O-Q-T-C-D).",
+        "title": "Level 3: Basic Concepts (મૂળભૂત સિદ્ધાંતો)",
+        "content_text": "1. Rock Types (ખડકોના પ્રકાર):\n- Igneous Rocks: Magma અથવા lava ના cooling અને solidification (ઠંડા પડીને જામી જવાથી) બને છે (e.g., Granite, Basalt, Gabbro).\n- Sedimentary Rocks: પહેલેથી અસ્તિત્વમાં રહેલા ખડકોના weathering, deposition, compaction અને cementation થી બને છે. Coal seams હંમેશા sedimentary rocks માં જ જોવા મળે છે (e.g., Sandstone, Shale, Limestone).\n- Metamorphic Rocks: ઊંચા temperature અને pressure ના પ્રભાવ હેઠળ મૂળ ખડકોનું structure અને mineralogy બદલાવાથી બને છે (e.g., Quartzite, Marble, Gneiss).\n\n2. Mohs Hardness Scale (સાપેક્ષ કઠિનતા સ્કેલ):\n1: Talc (સૌથી નરમ - Softest)\n2: Gypsum\n3: Calcite\n4: Fluorite\n5: Apatite\n6: Orthoclase Feldspar\n7: Quartz\n8: Topaz\n9: Corundum\n10: Diamond (સૌથી કઠણ - Hardest)\n\nયાદ રાખવાની સરળ ટ્રીક: 'The Girls Can Flirt And Other Queer Things Can Do' (T-G-C-F-A-O-Q-T-C-D).",
         "order_index": 3
       },
       {
         "level_number": 4,
         "section_type": "FORMULAS",
-        "title": "Level 4: Important Formulas & Relations (Zaroori Sutra)",
-        "content_text": "1. Specific Gravity (G):\nG = W_dry / (W_dry - W_submerged)\nVariables: W_dry = Dry weight of rock specimen (N ya g), W_submerged = Specimen submerged in water weight (N ya g).\nUnit: Dimensionless.\n\n2. Mohs Hardness Test Rule: Harder mineral scratch karega softer mineral ko. Agar mineral A scratches mineral B, to Hardness(A) > Hardness(B).\n\n3. Quartz Content & Abrasivity: Quartz abrasive index badhane me sabse bada factor hai. High quartz rock drill bit wear rate ko exponentially increase karta hai.",
+        "title": "Level 4: Important Formulas & Relations (મહત્વપૂર્ણ સૂત્રો અને સંબંધો)",
+        "content_text": "1. Specific Gravity (G):\nG = W_dry / (W_dry - W_submerged)\nVariables: W_dry = હવામાં rock specimen નું dry weight (N અથવા g), W_submerged = પાણીમાં ડૂબાડેલા specimen નું વજન (N અથવા g).\nUnit: Dimensionless (એકમરહિત ગુણોત્તર).\n\n2. Mohs Hardness Test Rule: Harder mineral હંમેશા softer mineral પર scratch (લીટો) પાડી શકે છે. જો mineral A mineral B ને scratch કરે છે, તો Hardness(A) > Hardness(B).\n\n3. Quartz Content અને Abrasivity: ખડકોમાં Quartz abrasive index વધારવામાં સૌથી મોટું પરિબળ છે. High quartz ધરાવતો rock drill bit ના wear rate (ઘસારા) ને exponentially વધારી દે છે.",
         "order_index": 4
       },
       {
         "level_number": 5,
         "section_type": "SIMPLE_EXAMPLE",
-        "title": "Level 5: Simple Example (Aasan Udaharan)",
-        "content_text": "Question: Ek mineral sample Calcite (Hardness 3) ko scratch kar sakta hai, lekin Apatite (Hardness 5) se scratch ho jaata hai. Fluorite (Hardness 4) ko ye sample scratch nahi kar pata balki Fluorite isko scratch kar deta hai. Sample ki Mohs hardness kiske barabar ya beech me hai?\n\nSolution:\nCalcite = 3, Fluorite = 4, Apatite = 5.\nSince sample Calcite ko scratch karta hai => Hardness > 3.\nFluorite sample ko scratch karta hai => Hardness < 4.\nIsliye sample ki Mohs hardness 3 aur 4 ke beech me hai (around 3.5).",
+        "title": "Level 5: Simple Example (સરળ ઉદાહરણ)",
+        "content_text": "પ્રશ્ન: એક અજ્ઞાત mineral sample Calcite (Hardness 3) ને scratch કરી શકે છે, પરંતુ Apatite (Hardness 5) વડે scratch થઈ જાય છે. Fluorite (Hardness 4) ને આ sample scratch કરી શકતું નથી, બલ્કે Fluorite તેના પર scratch પાડી દે છે. આ sample ની Mohs hardness કોની વચ્ચે હશે?\n\nઉકેલ:\nCalcite = 3, Fluorite = 4, Apatite = 5.\nSample Calcite ને scratch કરે છે => Hardness > 3.\nFluorite sample ને scratch કરે છે => Hardness < 4.\nતેથી sample ની Mohs hardness 3 અને 4 ની વચ્ચે છે (લગભગ 3.5).",
         "order_index": 5
       },
       {
         "level_number": 6,
         "section_type": "GATE_EXAMPLE",
-        "title": "Level 6: GATE-Level Example (GATE Pattern Question)",
-        "content_text": "Question (GATE Pattern):\nMatch the following rocks with their primary geological classification:\nP: Basalt\nQ: Sandstone\nR: Gneiss\nS: Granite\n\nOptions:\n1. Extrusive Igneous\n2. Intrusive Igneous\n3. Clastic Sedimentary\n4. Foliated Metamorphic\n\nExplanation:\n- Basalt surface par lava ke tezi se thande hone se banta hai => Extrusive Igneous (1)\n- Sandstone sand grains ke compaction se banti hai => Clastic Sedimentary (3)\n- Gneiss granite ya sedimentary rocks par intense metamorphism se banti hai jisme banding (foliation) hoti hai => Foliated Metamorphic (4)\n- Granite zameen ke neeche magma ke slow cooling se banta hai => Intrusive Plutonic Igneous (2)\nCorrect Match: P-1, Q-3, R-4, S-2.",
+        "title": "Level 6: GATE-Level Example (GATE પેટર્ન દાખલો)",
+        "content_text": "પ્રશ્ન (GATE Pattern):\nનીચે આપેલા rocks ને તેમના મુખ્ય geological classification સાથે જોડો:\nP: Basalt\nQ: Sandstone\nR: Gneiss\nS: Granite\n\nOptions:\n1. Extrusive Igneous\n2. Intrusive Igneous\n3. Clastic Sedimentary\n4. Foliated Metamorphic\n\nસમજૂતી:\n- Basalt જમીનની સપાટી પર lava ના ઝડપથી ઠંડા થવાથી બને છે => Extrusive Igneous (1)\n- Sandstone રેતીના કણોના compaction અને cementation થી બને છે => Clastic Sedimentary (3)\n- Gneiss granite કે sedimentary rocks પર તીવ્ર metamorphism થવાથી બને છે જેમાં banding (foliation) જોવા મળે છે => Foliated Metamorphic (4)\n- Granite જમીનની અંદર magma ના ધીમે ધીમે ઠંડા થવાથી બને છે => Intrusive Plutonic Igneous (2)\nસાચો મેળ: P-1, Q-3, R-4, S-2.",
         "order_index": 6
       },
       {
         "level_number": 7,
         "section_type": "PYQ_REVIEW",
-        "title": "Level 7: Previous Year GATE Questions Analysis (PYQ Analysis)",
-        "content_text": "GATE MN me is topic se related standard questions:\n- GATE 2020: Mohs hardness sequence par direct 1-mark question.\n- GATE 2018: Diamond aur Corundum ke scratch behavior par numerical-linked concept.\nKey Observation: GATE me hamesha order pucha jata hai (increasing ya decreasing). Question dhyan se padhna chahiye ki 'ascending' pucha hai ya 'descending'.",
+        "title": "Level 7: Previous Year GATE Questions Analysis (PYQ એનાલિસિસ)",
+        "content_text": "GATE MN માં આ ટોપિક પરથી પૂછાયેલા મુખ્ય પ્રશ્નો:\n- GATE 2020: Mohs hardness sequence પર સીધો 1-mark નો પ્રશ્ન પૂછાયો હતો.\n- GATE 2018: Diamond અને Corundum ના scratch behavior પર numerical-linked concept પૂછાયો હતો.\nમહત્વનું તારણ: GATE માં હંમેશા ક્રમ (order) પૂછાય છે (ચડતો કે ઊતરતો). પ્રશ્ન ધ્યાનથી વાંચવો કે 'ascending' (ચડતો) પૂછ્યો છે કે 'descending' (ઊતરતો).",
         "order_index": 7
       },
       {
         "level_number": 8,
         "section_type": "TIMED_PRACTICE",
-        "title": "Level 8: Quick Revision & Exam Checklist (Exam Day Checklist)",
-        "content_text": "- Talc is the softest (Hardness 1), Diamond is the hardest (Hardness 10).\n- Calcite ka cleavage rhombohedral hota hai.\n- Coal sedimentary origin ka rock hai jisme carbonaceous matter rich hota hai.\n- Sandstone reservoir rock aur roof rock dono ban sakti hai coal mines me.\nAb niche diye gaye button se 10 MCQs attempt karein aur topic complete karein!",
+        "title": "Level 8: Quick Revision & Exam Checklist (ક્વિક રિવિઝન અને ચેકલિસ્ટ)",
+        "content_text": "- Talc સૌથી સોફ્ટ ખનિજ છે (Hardness 1), અને Diamond સૌથી હાર્ડ છે (Hardness 10).\n- Calcite નું cleavage rhombohedral હોય છે.\n- Coal એ sedimentary origin નો ખડક છે જે carbonaceous matter થી ભરપૂર હોય છે.\n- Sandstone એ coal mines માં reservoir rock અને roof rock બંને તરીકે કામ કરી શકે છે.\nહવે નીચે આપેલા બટન પર ક્લિક કરીને 10 MCQs નો ટેસ્ટ આપો અને ટોપિક કમ્પ્લીટ કરો!",
         "order_index": 8
       }
     ]
@@ -66,63 +66,63 @@
   {
     "topic_id": 8,
     "title": "Blast Design: Burden, Spacing, Powder Factor & PPV",
-    "overview": "Master surface blast geometry, burden to spacing ratios, powder factor calculations, and ground vibration attenuation laws.",
+    "overview": "Surface blast geometry, burden to spacing ratios, powder factor calculations, અને ground vibration attenuation laws નું સંપૂર્ણ વિશ્લેષણ.",
     "estimated_read_time": 30,
     "sections": [
       {
         "level_number": 1,
         "section_type": "CONCEPT_INTRO",
-        "title": "Level 1: What is this topic? (Ye Topic Kya Hai?)",
-        "content_text": "Blast Design ka matlab hai opencast ya underground mines me rock fragmentation ke liye holes ka arrangement, explosive quantity, delay timing, aur vibration safety determine karna. Burden (free face se hole ki distance), spacing (do holes ke beech ki doori), bench height, aur sub-drilling iske core geometric parameters hain.",
+        "title": "Level 1: What is this topic? (આ ટોપિક શું છે?)",
+        "content_text": "Blast Design એટલે opencast કે underground mines માં rock fragmentation (પથ્થરો તોડવા) માટે holes ની ગોઠવણી, explosive નો જથ્થો, delay timing, અને vibration safety નક્કી કરવાનું વિજ્ઞાન છે. Burden (free face થી hole નું લંબ અંતર), spacing (એક જ હરોળના બે holes વચ્ચેનું અંતર), bench height, અને sub-drilling આના મુખ્ય geometric parameters છે.",
         "order_index": 1
       },
       {
         "level_number": 2,
         "section_type": "IMPORTANCE",
-        "title": "Level 2: Why does it matter? (GATE aur Mining me iska kya role hai?)",
-        "content_text": "GATE Mining paper me Blast Design se har saal minimum 2 se 4 marks ke numericals aate hain! Powder factor calculate karna, blast vibration (Peak Particle Velocity - PPV) predict karna, flyrock prevent karna, aur shovel-dumper loading cost minimize karna ek Mining Engineer ka sabse important role hota hai.",
+        "title": "Level 2: Why does it matter? (GATE અને Mining માં આનો શું રોલ છે?)",
+        "content_text": "GATE Mining પેપરમાં Blast Design પરથી દર વર્ષે ઓછામાં ઓછા 2 થી 4 marks ના numericals પૂછાય જ છે! Powder factor ની ગણતરી કરવી, blast vibration (Peak Particle Velocity - PPV) ની આગાહી કરવી, flyrock અટકાવવું, અને shovel-dumper loading cost ઘટાડવી એ Mining Engineer ની સૌથી મહત્વની જવાબદારી છે.",
         "order_index": 2
       },
       {
         "level_number": 3,
         "section_type": "BASIC_CONCEPTS",
-        "title": "Level 3: Basic Concepts (Mool Bhoot Siddhant)",
-        "content_text": "1. Burden (B): Hole aur nearest free face ke beech perpendicular distance.\n2. Spacing (S): Same row me adjacent holes ke beech ki doori. Typically S = 1.15*B se 1.5*B hota hai.\n3. Bench Height (H): Vertical height of the excavation step.\n4. Stemming (T): Inactive drill hole collar length jo inert material (sand, drill cuttings) se fill ki jaati hai taaki explosive gas escape na ho.\n5. Sub-drilling (J): Grade line ke neeche extra depth drill karna taaki toe na bache. Typically J = 0.2*B to 0.3*B.\n6. Powder Factor (PF):\n- Opencast Coal: m3 of rock broken per kg of explosive (m3/kg)\n- Opencast Metal: Tonnes of ore broken per kg of explosive (t/kg).",
+        "title": "Level 3: Basic Concepts (મૂળભૂત સિદ્ધાંતો)",
+        "content_text": "1. Burden (B): Hole અને સૌથી નજીકના free face વચ્ચેનું perpendicular (લંબ) અંતર.\n2. Spacing (S): એક જ હરોળમાં આવેલા પાસપાસેના holes વચ્ચેનું અંતર. સામાન્ય રીતે S = 1.15*B થી 1.5*B રાખવામાં આવે છે.\n3. Bench Height (H): Excavation step ની vertical ઊંચાઈ.\n4. Stemming (T): Drill hole નો ઉપરનો ભાગ જેને inert material (રેતી, drill cuttings) થી પેક કરવામાં આવે છે જેથી explosive gas બહાર ન નીકળી જાય.\n5. Sub-drilling (J): Grade line ની નીચે કરવામાં આવતું વધારાનું drilling જેથી toe (નીચેનો ભાગ) બાકી ન રહી જાય. સામાન્ય રીતે J = 0.2*B થી 0.3*B હોય છે.\n6. Powder Factor (PF):\n- Opencast Coal: પ્રતિ kg explosive દીઠ તૂટતો ખડક (m3/kg)\n- Opencast Metal: પ્રતિ kg explosive દીઠ તૂટતું ore (tonnes/kg).",
         "order_index": 3
       },
       {
         "level_number": 4,
         "section_type": "FORMULAS",
-        "title": "Level 4: Important Formulas & Variables (Zaroori Sutra)",
-        "content_text": "1. Volume of Rock Broken per Hole (V):\nV = B * S * H (in m3)\nVariables: B = Burden (m), S = Spacing (m), H = Bench height (m).\n\n2. Tonnage per Hole (M):\nM = B * S * H * rho_rock (in tonnes)\nrho_rock = In-situ rock density (tonnes/m3).\n\n3. Powder Factor (PF):\nPF = (Total Tonnes Broken) / (Total Explosive Consumed)  [t/kg]\nYa: PF = (Total m3 Broken) / (Total Explosive Consumed) [m3/kg]\n\n4. USBM Ground Vibration Attenuation Law (PPV):\nPPV = K * (D / sqrt(Q))^(-beta)\nVariables:\nPPV = Peak Particle Velocity (mm/s)\nD = Distance from blast point to structure (m)\nQ = Maximum instantaneous explosive charge per delay (kg)\n(D / sqrt(Q)) = Scaled Distance (SD) in m/kg^0.5\nK, beta = Site-specific rock transmission constants.",
+        "title": "Level 4: Important Formulas & Variables (મહત્વપૂર્ણ સૂત્રો અને ચલો)",
+        "content_text": "1. Volume of Rock Broken per Hole (V):\nV = B * S * H (m3 માં)\nચલો: B = Burden (m), S = Spacing (m), H = Bench height (m).\n\n2. Tonnage per Hole (M):\nM = B * S * H * rho_rock (tonnes માં)\nrho_rock = ખડકની In-situ density (tonnes/m3).\n\n3. Powder Factor (PF):\nPF = (કુલ તૂટેલા Tonnes) / (વપરાયેલ કુલ Explosive kg)  [t/kg]\nઅથવા: PF = (કુલ તૂટેલા m3) / (વપરાયેલ કુલ Explosive kg) [m3/kg]\n\n4. USBM Ground Vibration Attenuation Law (PPV):\nPPV = K * (D / sqrt(Q))^(-beta)\nચલો:\nPPV = Peak Particle Velocity (mm/s)\nD = Blast point થી structure વચ્ચેનું અંતર (m)\nQ = Delay દીઠ મહત્તમ instantaneous explosive charge (kg)\n(D / sqrt(Q)) = Scaled Distance (SD) [m/kg^0.5]\nK, beta = સાઇટ આધારિત geological transmission અચળાંકો (constants).",
         "order_index": 4
       },
       {
         "level_number": 5,
         "section_type": "SIMPLE_EXAMPLE",
-        "title": "Level 5: Simple Example (Aasan Udaharan)",
-        "content_text": "Problem:\nEk open pit mine me:\nBurden B = 4 m\nSpacing S = 5 m\nBench height H = 10 m\nHar hole me explosive charge = 80 kg.\nRock density = 2.5 tonnes/m3.\nPowder factor (t/kg) calculate karein.\n\nSolution:\nStep 1: Volume broken per hole = B * S * H = 4 * 5 * 10 = 200 m3.\nStep 2: Mass broken per hole = 200 * 2.5 = 500 tonnes.\nStep 3: Powder Factor = 500 tonnes / 80 kg = 6.25 tonnes/kg.\nAnswer: 6.25 t/kg.",
+        "title": "Level 5: Simple Example (સરળ ઉદાહરણ)",
+        "content_text": "દાખલો:\nએક open pit mine માં:\nBurden B = 4 m\nSpacing S = 5 m\nBench height H = 10 m\nદરેક hole માં explosive charge = 80 kg.\nRock density = 2.5 tonnes/m3.\nPowder factor (t/kg) ગણો.\n\nઉકેલ:\nStep 1: પ્રતિ hole તૂટતું કદ (Volume) = B * S * H = 4 * 5 * 10 = 200 m3.\nStep 2: પ્રતિ hole તૂટતું દળ (Mass) = 200 * 2.5 = 500 tonnes.\nStep 3: Powder Factor = 500 tonnes / 80 kg = 6.25 tonnes/kg.\nજવાબ: 6.25 t/kg.",
         "order_index": 5
       },
       {
         "level_number": 6,
         "section_type": "GATE_EXAMPLE",
-        "title": "Level 6: GATE-Level Example (GATE Pattern Question)",
-        "content_text": "Question (GATE Pattern Numerical):\nIn a blast, the vibration attenuation relation is given by:\nPPV = 1000 * (D / sqrt(Q))^(-1.6) mm/s.\nA building is located at a distance D = 200 m from the blast site. The permissible PPV at the building is 10 mm/s. The maximum permissible explosive charge per delay Q (in kg) rounded off to 2 decimal places is:\n\nSolution:\n10 = 1000 * (200 / sqrt(Q))^(-1.6)\n=> 10 / 1000 = (200 / sqrt(Q))^(-1.6)\n=> 0.01 = (200 / sqrt(Q))^(-1.6)\nTaking both sides to power (-1/1.6):\n=> (0.01)^(-0.625) = 200 / sqrt(Q)\n=> 0.01^(-0.625) = 17.7828\n=> 200 / sqrt(Q) = 17.7828\n=> sqrt(Q) = 200 / 17.7828 = 11.2468\n=> Q = (11.2468)^2 = 126.49 kg.\n\nAnswer: 126.49 kg.",
+        "title": "Level 6: GATE-Level Example (GATE પેટર્ન દાખલો)",
+        "content_text": "પ્રશ્ન (GATE Pattern Numerical):\nએક બ્લાસ્ટિંગમાં vibration attenuation નું સમીકરણ આપેલું છે:\nPPV = 1000 * (D / sqrt(Q))^(-1.6) mm/s.\nબ્લાસ્ટ સાઇટથી D = 200 m ના અંતરે એક બિલ્ડિંગ આવેલી છે. બિલ્ડિંગ માટે permissible PPV 10 mm/s છે. પ્રતિ delay માન્ય મહત્તમ explosive charge Q (kg માં) શોધો (2 decimal places સુધી):\n\nઉકેલ:\n10 = 1000 * (200 / sqrt(Q))^(-1.6)\n=> 10 / 1000 = (200 / sqrt(Q))^(-1.6)\n=> 0.01 = (200 / sqrt(Q))^(-1.6)\nબંને બાજુ પાવર (-1/1.6 = -0.625) લેતાં:\n=> (0.01)^(-0.625) = 200 / sqrt(Q)\n=> 17.7828 = 200 / sqrt(Q)\n=> sqrt(Q) = 200 / 17.7828 = 11.2468\n=> Q = (11.2468)^2 = 126.49 kg.\n\nજવાબ: 126.49 kg.",
         "order_index": 6
       },
       {
         "level_number": 7,
         "section_type": "PYQ_REVIEW",
-        "title": "Level 7: Previous Year GATE Questions Analysis (PYQ Analysis)",
-        "content_text": "- GATE 2021 & 2023 dono me PPV equation aur Scaled Distance formula par direct 2-mark NAT question pucha gaya tha.\n- Common Trap: Question me total explosive diya hota hai, lekin formula me 'Charge per Delay' (Q) use hota hai. Students aksar total charge rakh dete hain aur answer galat ho jaata hai!",
+        "title": "Level 7: Previous Year GATE Questions Analysis (PYQ એનાલિસિસ)",
+        "content_text": "- GATE 2021 અને 2023 બંનેમાં PPV equation અને Scaled Distance formula પર સીધા 2-mark ના NAT પ્રશ્નો પૂછાયા હતા.\n- સામાન્ય ભૂલ (Common Trap): પ્રશ્નમાં ઘણીવાર કુલ explosive નો જથ્થો આપેલો હોય છે, પરંતુ સૂત્રમાં 'Charge per Delay' (Q) જ વપરાય છે. વિદ્યાર્થીઓ ભૂલથી કુલ charge મૂકી દે છે જેથી જવાબ ખોટો પડે છે!",
         "order_index": 7
       },
       {
         "level_number": 8,
         "section_type": "TIMED_PRACTICE",
-        "title": "Level 8: Quick Revision & Exam Checklist",
-        "content_text": "- S/B ratio usually 1.15 to 1.5 hota hai.\n- Sub-drilling toe problem eliminate karne ke liye zaroori hoti hai.\n- Scaled distance square-root scaling (D / sqrt(Q)) surface vibrations ke liye use hoti hai.\n- Cylindrical charges ke liye cube-root scaling (D / Q^(1/3)) body waves ke liye use hoti hai.\nNiche diye gaye 10 MCQs attempt karein!",
+        "title": "Level 8: Quick Revision & Exam Checklist (ક્વિક રિવિઝન અને ચેકલિસ્ટ)",
+        "content_text": "- S/B ratio સામાન્ય રીતે 1.15 થી 1.5 રાખવામાં આવે છે.\n- Sub-drilling એ toe problem નાબૂદ કરવા માટે અત્યંત જરૂરી છે.\n- Scaled distance માટે square-root scaling (D / sqrt(Q)) સપાટી પરના વાઇબ્રેશન માટે વપરાય છે.\n- Cylindrical charges માટે cube-root scaling (D / Q^(1/3)) body waves માટે વપરાય છે.\nહવે નીચે આપેલા 10 MCQs નો ટેસ્ટ આપો!",
         "order_index": 8
       }
     ]
@@ -130,63 +130,63 @@
   {
     "topic_id": 36,
     "title": "Mine Airflow Dynamics: Atkinson Equation & Resistance",
-    "overview": "Master fluid mechanics in underground airways, Atkinson's equation, airway resistance, series/parallel splits, and air power calculations.",
+    "overview": "Underground airways માં fluid mechanics, Atkinson's equation, airway resistance, series/parallel splits, અને air power ની ગણતરીઓ.",
     "estimated_read_time": 30,
     "sections": [
       {
         "level_number": 1,
         "section_type": "CONCEPT_INTRO",
-        "title": "Level 1: What is this topic? (Ye Topic Kya Hai?)",
-        "content_text": "Mine Airflow Dynamics underground roadways me air ke flow, friction losses, aur ventilation pressure drops ko calculate karne ka science hai. Jab air khadaan ki rough walls, bends, aur galleries se guzarti hai, to friction aur turbulence ki wajah se pressure drop hota hai. Isko Atkinson's Equation se describe kiya jaata hai.",
+        "title": "Level 1: What is this topic? (આ ટોપિક શું છે?)",
+        "content_text": "Mine Airflow Dynamics એ underground roadways માં હવાની ગતિ (airflow), ઘર્ષણથી થતું નુકસાન (friction losses), અને ventilation pressure drop ની ગણતરી કરવાનું વિજ્ઞાન છે. જ્યારે હવા ખાણની ખરબચડી દીવાલો, વળાંકો (bends), અને ગેલેરીઓમાંથી પસાર થાય છે, ત્યારે friction અને turbulence ના કારણે pressure ઘટી જાય છે. આ પ્રક્રિયાને Atkinson's Equation વડે સમજાવવામાં આવે છે.",
         "order_index": 1
       },
       {
         "level_number": 2,
         "section_type": "IMPORTANCE",
-        "title": "Level 2: Why does it matter? (GATE aur Mining me iska kya role hai?)",
-        "content_text": "Mine Ventilation section GATE MN ka sabse heavy scoring numerical area hai! Atkinson's equation, airway resistance R, splits me air quantity distribution, aur ventilation fan motor power par har saal 4 se 6 marks ke direct questions aate hain.",
+        "title": "Level 2: Why does it matter? (GATE અને Mining માં આનો શું રોલ છે?)",
+        "content_text": "Mine Ventilation સેક્શન એ GATE MN નો સૌથી વધુ સ્કોરિંગ numerical વિભાગ છે! Atkinson's equation, airway resistance R, હવાના વિભાજન (splits) માં air quantity distribution, અને ventilation fan motor power પર દર વર્ષે 4 થી 6 marks ના પ્રશ્નો પૂછાય છે.",
         "order_index": 2
       },
       {
         "level_number": 3,
         "section_type": "BASIC_CONCEPTS",
-        "title": "Level 3: Basic Concepts (Mool Bhoot Siddhant)",
-        "content_text": "1. Atkinson's Law of Mine Ventilation:\nVentilation pressure drop (P) airway ke friction factor, rubbing surface area, aur square of air velocity ke directly proportional hota hai.\n\n2. Square Law of Airflow:\nP = R * Q^2\nJahan P = Pressure drop (Pa), R = Airway Resistance (Ns^2/m^8 ya kg/m^7), Q = Airflow quantity (m3/s).\n\n3. Resistance Relations:\n- Series Airway: Total Resistance R_total = R1 + R2 + R3 + ...\n- Parallel Airway: 1 / sqrt(R_total) = 1 / sqrt(R1) + 1 / sqrt(R2) + ...\n\n4. Equivalent Orifice (Murgue's Formula):\nA_eq = 0.385 / sqrt(R)  [in m2, for standard air density 1.2 kg/m3].",
+        "title": "Level 3: Basic Concepts (મૂળભૂત સિદ્ધાંતો)",
+        "content_text": "1. Atkinson's Law of Mine Ventilation:\nVentilation pressure drop (P) એ airway ના friction factor, rubbing surface area, અને air velocity ના વર્ગ (square of velocity) ના સમપ્રમાણમાં હોય છે.\n\n2. Square Law of Airflow:\nP = R * Q^2\nજ્યાં P = Pressure drop (Pa), R = Airway Resistance (Ns^2/m^8 અથવા kg/m^7), Q = Airflow quantity (m3/s).\n\n3. Resistance ના સંબંધો:\n- Series Airway (શ્રેણી જોડાણ): કુલ Resistance R_total = R1 + R2 + R3 + ...\n- Parallel Airway (સમાંતર જોડાણ): 1 / sqrt(R_total) = 1 / sqrt(R1) + 1 / sqrt(R2) + ...\n\n4. Equivalent Orifice (Murgue નું સૂત્ર):\nA_eq = 0.385 / sqrt(R)  [m2 માં, પ્રમાણભૂત હવાની ઘનતા 1.2 kg/m3 માટે].",
         "order_index": 3
       },
       {
         "level_number": 4,
         "section_type": "FORMULAS",
-        "title": "Level 4: Important Formulas & Variables (Zaroori Sutra)",
-        "content_text": "1. Atkinson's Equation:\nP = (k * S * Q^2) / A^3\nVariables:\nP = Frictional pressure loss (Pa or N/m2)\nk = Friction factor of roadway (kg/m3 ya Ns^2/m^4)\nS = Rubbing surface area = Periphery (O) * Length (L) = O * L (m2)\nA = Cross-sectional area of roadway (m2)\nQ = Air quantity (m3/s).\n\n2. Airway Resistance (R):\nR = (k * S) / A^3 = (k * O * L) / A^3\nNote: Agar cross-sectional area double ho jaye to resistance (1/2)^3 = 1/8th ho jaata hai!\n\n3. Air Power Consumed (P_air):\nP_air = (P * Q) Watts = (P * Q) / 1000 kW\n\n4. Fan Shaft Power / Motor Power:\nMotor Power = P_air / (eta_fan * eta_motor) kW.",
+        "title": "Level 4: Important Formulas & Variables (મહત્વપૂર્ણ સૂત્રો અને ચલો)",
+        "content_text": "1. Atkinson's Equation:\nP = (k * S * Q^2) / A^3\nચલો:\nP = Frictional pressure loss (Pa અથવા N/m2)\nk = Roadway નો friction factor (kg/m3 અથવા Ns^2/m^4)\nS = Rubbing surface area = Perimeter (O) * Length (L) = O * L (m2)\nA = Roadway નું Cross-sectional area (m2)\nQ = હવાનો જથ્થો - Air quantity (m3/s).\n\n2. Airway Resistance (R):\nR = (k * S) / A^3 = (k * O * L) / A^3\nનોંધ: જો cross-sectional area બમણું (double) કરવામાં આવે, તો resistance (1/2)^3 = 1/8 ગણું ઘટી જાય છે!\n\n3. Air Power Consumed (P_air):\nP_air = (P * Q) Watts = (P * Q) / 1000 kW\n\n4. Fan Shaft Power / Motor Power:\nMotor Power = P_air / (eta_fan * eta_motor) kW.",
         "order_index": 4
       },
       {
         "level_number": 5,
         "section_type": "SIMPLE_EXAMPLE",
-        "title": "Level 5: Simple Example (Aasan Udaharan)",
-        "content_text": "Problem:\nEk mine roadway me 40 m3/s hawa flow ho rahi hai aur pressure drop 640 Pa hai. Roadway ka resistance (R) calculate karein.\n\nSolution:\nFormula: P = R * Q^2\n=> R = P / Q^2\n=> R = 640 / (40)^2 = 640 / 1600 = 0.4 Ns^2/m^8.\nAnswer: R = 0.4 Ns^2/m^8.",
+        "title": "Level 5: Simple Example (સરળ ઉદાહરણ)",
+        "content_text": "દાખલો:\nએક mine roadway માં 40 m3/s હવા વહી રહી છે અને pressure drop 640 Pa છે. Roadway નો resistance (R) શોધો.\n\nઉકેલ:\nસૂત્ર: P = R * Q^2\n=> R = P / Q^2\n=> R = 640 / (40)^2 = 640 / 1600 = 0.4 Ns^2/m^8.\nજવાબ: R = 0.4 Ns^2/m^8.",
         "order_index": 5
       },
       {
         "level_number": 6,
         "section_type": "GATE_EXAMPLE",
-        "title": "Level 6: GATE-Level Example (GATE Pattern Question)",
-        "content_text": "Question (GATE 2022 Pattern):\nA circular airway of diameter 4 m and length 500 m has a friction factor k = 0.01 Ns^2/m^4. If the air quantity flowing through the airway is 50 m3/s, calculate:\n(a) Airway resistance R\n(b) Pressure loss P\n(c) Air power in kW.\n\nSolution:\nStep 1: Area A = pi * r^2 = pi * (2)^2 = 4*pi = 12.566 m2.\nPerimeter O = pi * d = 4*pi = 12.566 m.\nRubbing surface S = O * L = 12.566 * 500 = 6283.18 m2.\n\nStep 2: Resistance R = (k * S) / A^3\n=> R = (0.01 * 6283.18) / (12.566)^3 = 62.8318 / 1984.34 = 0.03166 Ns^2/m^8.\n\nStep 3: Pressure drop P = R * Q^2\n=> P = 0.03166 * (50)^2 = 0.03166 * 2500 = 79.16 Pa.\n\nStep 4: Air Power = (P * Q) / 1000 = (79.16 * 50) / 1000 = 3.96 kW.\n\nAnswer: R = 0.0317 Ns^2/m^8, P = 79.16 Pa, Power = 3.96 kW.",
+        "title": "Level 6: GATE-Level Example (GATE પેટર્ન દાખલો)",
+        "content_text": "પ્રશ્ન (GATE 2022 Pattern):\nએક ગોળાકાર (circular) airway જેનો વ્યાસ d = 4 m અને લંબાઈ L = 500 m છે, તેનો friction factor k = 0.01 Ns^2/m^4 છે. જો airway માંથી 50 m3/s હવા વહેતી હોય, તો ગણો:\n(a) Airway resistance R\n(b) Pressure loss P\n(c) Air power (kW માં).\n\nઉકેલ:\nStep 1: Area A = pi * r^2 = pi * (2)^2 = 4*pi = 12.566 m2.\nPerimeter O = pi * d = 4*pi = 12.566 m.\nRubbing surface S = O * L = 12.566 * 500 = 6283.18 m2.\n\nStep 2: Resistance R = (k * S) / A^3\n=> R = (0.01 * 6283.18) / (12.566)^3 = 62.8318 / 1984.34 = 0.03166 Ns^2/m^8.\n\nStep 3: Pressure drop P = R * Q^2\n=> P = 0.03166 * (50)^2 = 0.03166 * 2500 = 79.16 Pa.\n\nStep 4: Air Power = (P * Q) / 1000 = (79.16 * 50) / 1000 = 3.96 kW.\n\nજવાબ: R = 0.0317 Ns^2/m^8, P = 79.16 Pa, Power = 3.96 kW.",
         "order_index": 6
       },
       {
         "level_number": 7,
         "section_type": "PYQ_REVIEW",
-        "title": "Level 7: Previous Year GATE Questions Analysis (PYQ Analysis)",
-        "content_text": "- GATE 2020, 2021, 2023 me parallel airways ke split flow ratio par questions the. Parallel airways me P dono branch me same hota hai: P = R1 * Q1^2 = R2 * Q2^2 => Q1 / Q2 = sqrt(R2 / R1).\n- Common Trap: Students k ko density ya kinematic viscosity se confuse kar lete hain. Atkinson formula me k empirical friction factor hai.",
+        "title": "Level 7: Previous Year GATE Questions Analysis (PYQ એનાલિસિસ)",
+        "content_text": "- GATE 2020, 2021, 2023 માં parallel airways ના split flow ratio પર પ્રશ્નો પૂછાયા હતા. Parallel airways માં બંને શાખામાં pressure drop સમાન હોય છે: P = R1 * Q1^2 = R2 * Q2^2 => Q1 / Q2 = sqrt(R2 / R1).\n- સામાન્ય ભૂલ (Common Trap): વિદ્યાર્થીઓ k ને density કે kinematic viscosity સાથે ગૂંચવી નાખે છે. Atkinson સૂત્રમાં k એ empirical friction factor છે.",
         "order_index": 7
       },
       {
         "level_number": 8,
         "section_type": "TIMED_PRACTICE",
-        "title": "Level 8: Quick Revision & Exam Checklist",
-        "content_text": "- P = R * Q^2.\n- Air power = (P * Q) / 1000 kW.\n- Parallel airways me Q proportional to 1 / sqrt(R).\n- Series airways me R_total = R1 + R2.\n- Equivalent orifice A = 0.385 / sqrt(R).\nReady ho? Ab 10 MCQs attempt karein!",
+        "title": "Level 8: Quick Revision & Exam Checklist (ક્વિક રિવિઝન અને ચેકલિસ્ટ)",
+        "content_text": "- P = R * Q^2.\n- Air power = (P * Q) / 1000 kW.\n- Parallel airways માં Q એ 1 / sqrt(R) ના સમપ્રમાણમાં હોય છે.\n- Series airways માં R_total = R1 + R2.\n- Equivalent orifice A = 0.385 / sqrt(R).\nતૈયાર છો? હવે 10 MCQs નો ટેસ્ટ આપો!",
         "order_index": 8
       }
     ]
