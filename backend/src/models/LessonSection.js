@@ -33,7 +33,7 @@ module.exports = (sequelize) => {
       },
       content_text: {
         type: DataTypes.TEXT,
-        allowNull: false, // Structured Hinglish + English technical explanation
+        allowNull: false, // Structured Gujarati + English technical explanation
       },
       order_index: {
         type: DataTypes.INTEGER,
