@@ -10,4 +10,9 @@ export const topicService = {
     const res = await api.get(`/topics/${topicId}/lesson`);
     return res.data.data.lesson;
   },
+
+  async markCompleted(topicId) {
+    const res = await api.post(`/topics/${topicId}/complete`);
+    return res.data.data;
+  },
 };

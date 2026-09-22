@@ -249,18 +249,140 @@ async function getTopicLesson(topicId, userId) {
     };
   }
 
-  // Update lesson viewed in progress
-  await db.TopicProgress.upsert({
-    user_id: userId,
-    topic_id: topicId,
-    lesson_viewed: true,
-    status: TOPIC_STATUS.LEARNING,
+  // Update lesson viewed in progress without overwriting COMPLETED status
+  const [prog] = await db.TopicProgress.findOrCreate({
+    where: { user_id: userId, topic_id: topicId },
+    defaults: {
+      lesson_viewed: true,
+      status: TOPIC_STATUS.LEARNING,
+    },
   });
+  if (prog) {
+    prog.lesson_viewed = true;
+    if (prog.status === TOPIC_STATUS.NOT_STARTED) {
+      prog.status = TOPIC_STATUS.LEARNING;
+    }
+    await prog.save();
+  }
 
   return lesson;
+}
+
+async function markTopicCompleted(topicId, userId) {
+  const transaction = await db.sequelize.transaction();
+  try {
+    const topic = await db.Topic.findByPk(topicId);
+    if (!topic) {
+      const error = new Error(`Topic with ID ${topicId} not found`);
+      error.statusCode = 404;
+      throw error;
+    }
+
+    const [progress] = await db.TopicProgress.findOrCreate({
+      where: { user_id: userId, topic_id: topicId },
+      defaults: {
+        status: TOPIC_STATUS.COMPLETED,
+        best_score: 85,
+        last_score: 85,
+        attempts_count: 1,
+        lesson_viewed: true,
+        last_attempted_at: new Date(),
+        completed_at: new Date(),
+      },
+      transaction,
+    });
+
+    progress.status = TOPIC_STATUS.COMPLETED;
+    progress.lesson_viewed = true;
+    progress.completed_at = progress.completed_at || new Date();
+    if (!progress.best_score || progress.best_score < 80) {
+      progress.best_score = 85;
+    }
+    await progress.save({ transaction });
+
+    // Schedule spaced retention revision
+    const existingRevision = await db.RevisionSchedule.findOne({
+      where: { user_id: userId, topic_id: topicId, is_completed: false },
+      transaction,
+    });
+    if (!existingRevision) {
+      const { calculateRevisionDate } = require('../utils/dateUtils');
+      await db.RevisionSchedule.create(
+        {
+          user_id: userId,
+          topic_id: topicId,
+          revision_cycle: 1,
+          scheduled_date: calculateRevisionDate(0),
+          is_completed: false,
+        },
+        { transaction }
+      );
+    }
+
+    // Update DailyProgress for study days containing this topic
+    const dayTopics = await db.DayTopic.findAll({
+      where: { topic_id: topicId },
+      transaction,
+    });
+
+    let dayCompleted = false;
+    for (const dt of dayTopics) {
+      const dayId = dt.day_id;
+      const allDt = await db.DayTopic.findAll({ where: { day_id: dayId }, transaction });
+      const dtTopicIds = allDt.map((item) => item.topic_id);
+
+      const completedInDay = await db.TopicProgress.count({
+        where: {
+          user_id: userId,
+          topic_id: dtTopicIds,
+          status: TOPIC_STATUS.COMPLETED,
+        },
+        transaction,
+      });
+
+      const isCompleted = completedInDay >= allDt.length;
+      if (isCompleted) dayCompleted = true;
+
+      const [dailyProg] = await db.DailyProgress.findOrCreate({
+        where: { user_id: userId, day_id: dayId },
+        defaults: {
+          is_completed: isCompleted,
+          topics_completed_count: completedInDay,
+          total_topics_count: allDt.length,
+          completed_at: isCompleted ? new Date() : null,
+        },
+        transaction,
+      });
+
+      dailyProg.topics_completed_count = completedInDay;
+      dailyProg.total_topics_count = allDt.length;
+      if (isCompleted) {
+        dailyProg.is_completed = true;
+        dailyProg.completed_at = dailyProg.completed_at || new Date();
+      }
+      await dailyProg.save({ transaction });
+    }
+
+    await transaction.commit();
+
+    // Update streak asynchronously
+    const streakService = require('./streakService');
+    await streakService.updateUserStreak(userId).catch(() => {});
+
+    return {
+      topic_id: topicId,
+      status: TOPIC_STATUS.COMPLETED,
+      is_completed: true,
+      day_completed: dayCompleted,
+    };
+  } catch (error) {
+    await transaction.rollback();
+    throw error;
+  }
 }
 
 module.exports = {
   getTopicDetails,
   getTopicLesson,
+  markTopicCompleted,
 };

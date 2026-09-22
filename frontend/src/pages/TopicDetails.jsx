@@ -37,10 +37,33 @@ export default function TopicDetails() {
     loadData();
   }, [topicId]);
 
+  const [markingCompleted, setMarkingCompleted] = useState(false);
+
+  const handleMarkCompleted = async () => {
+    setMarkingCompleted(true);
+    try {
+      await topicService.markCompleted(topic.id);
+      confetti({ particleCount: 80, spread: 65, origin: { y: 0.6 } });
+      setTopic((prev) => ({
+        ...prev,
+        progress: {
+          ...prev.progress,
+          status: 'COMPLETED',
+          best_score: Math.max(prev.progress?.best_score || 0, 85),
+        },
+      }));
+    } catch (err) {
+      alert(err.response?.data?.message || 'Failed to mark topic as completed');
+    } finally {
+      setMarkingCompleted(false);
+    }
+  };
+
   if (loading) return <LoadingSpinner message="Loading topic modules & structured lessons..." />;
   if (!topic) return <div className="page-wrapper">Topic not found.</div>;
 
   const currentSection = lesson?.sections?.find((s) => s.level_number === activeLevel) || lesson?.sections?.[0];
+  const isCompleted = topic.progress?.status === 'COMPLETED';
 
   return (
     <div className="page-wrapper">
@@ -58,7 +81,7 @@ export default function TopicDetails() {
           <div>
             <h1 style={{ fontSize: '1.85rem' }}>{topic.name}</h1>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginTop: '8px' }}>
-              <span className={`badge ${topic.progress?.status === 'COMPLETED' ? 'badge-completed' : 'badge-learning'}`}>
+              <span className={`badge ${isCompleted ? 'badge-completed' : 'badge-learning'}`}>
                 {topic.progress?.status || 'NOT_STARTED'}
               </span>
               <span style={{ fontSize: '0.82rem', color: 'var(--text-dim)', display: 'flex', alignItems: 'center', gap: '4px' }}>
@@ -72,11 +95,40 @@ export default function TopicDetails() {
             </div>
           </div>
 
-          <Link to={`/topic/${topic.id}/quiz`} className="btn btn-accent">
-            <HelpCircle size={18} />
-            <span>Start 10-MCQ Mastery Quiz</span>
-            <ArrowRight size={16} />
-          </Link>
+          <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
+            {!isCompleted ? (
+              <button
+                onClick={handleMarkCompleted}
+                disabled={markingCompleted}
+                className="btn btn-secondary"
+                title="Mark this lesson completed and update schedule progress"
+              >
+                <CheckCircle2 size={18} color="#10b981" />
+                <span>{markingCompleted ? 'Updating...' : 'Mark as Completed'}</span>
+              </button>
+            ) : (
+              <span style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                color: '#10b981',
+                fontWeight: 700,
+                fontSize: '0.9rem',
+                padding: '6px 14px',
+                background: 'rgba(16, 185, 129, 0.1)',
+                borderRadius: 'var(--radius-sm)',
+                border: '1px solid rgba(16, 185, 129, 0.25)'
+              }}>
+                <CheckCircle2 size={16} /> Completed ✓
+              </span>
+            )}
+
+            <Link to={`/topic/${topic.id}/quiz`} className="btn btn-accent">
+              <HelpCircle size={18} />
+              <span>Start 10-MCQ Mastery Quiz</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -135,10 +187,22 @@ export default function TopicDetails() {
           </p>
         </div>
 
-        <Link to={`/topic/${topic.id}/quiz`} className="btn btn-primary">
-          <span>Attempt 10 MCQs Now</span>
-          <ArrowRight size={18} />
-        </Link>
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+          {!isCompleted && (
+            <button
+              onClick={handleMarkCompleted}
+              disabled={markingCompleted}
+              className="btn btn-secondary"
+            >
+              <CheckCircle2 size={18} color="#10b981" />
+              <span>{markingCompleted ? 'Updating...' : 'Mark as Completed'}</span>
+            </button>
+          )}
+          <Link to={`/topic/${topic.id}/quiz`} className="btn btn-primary">
+            <span>Attempt 10 MCQs Now</span>
+            <ArrowRight size={18} />
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -21,7 +21,18 @@ async function getLesson(req, res, next) {
   }
 }
 
+async function markTopicCompleted(req, res, next) {
+  try {
+    const topicId = parseInt(req.params.topicId, 10);
+    const result = await topicService.markTopicCompleted(topicId, req.user.id);
+    return ApiResponse.success(res, 'Topic marked as completed successfully', result);
+  } catch (error) {
+    next(error);
+  }
+}
+
 module.exports = {
   getTopic,
   getLesson,
+  markTopicCompleted,
 };

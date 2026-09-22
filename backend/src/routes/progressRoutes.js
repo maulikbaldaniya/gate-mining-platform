@@ -5,5 +5,6 @@ const { authenticate } = require('../middlewares/authMiddleware');
 
 router.get('/overview', authenticate, progressController.getProgressOverview);
 router.get('/subjects', authenticate, progressController.getSubjectProgress);
+router.get('/analytics', authenticate, progressController.getAnalytics);
 
 module.exports = router;

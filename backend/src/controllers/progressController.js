@@ -19,7 +19,17 @@ async function getSubjectProgress(req, res, next) {
   }
 }
 
+async function getAnalytics(req, res, next) {
+  try {
+    const analytics = await progressService.getComprehensiveAnalytics(req.user.id);
+    return ApiResponse.success(res, 'Comprehensive analytics retrieved', analytics);
+  } catch (error) {
+    next(error);
+  }
+}
+
 module.exports = {
   getProgressOverview,
   getSubjectProgress,
+  getAnalytics,
 };

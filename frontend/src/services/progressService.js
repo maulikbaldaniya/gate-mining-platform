@@ -15,4 +15,9 @@ export const progressService = {
     const res = await api.get('/progress/subjects');
     return res.data.data.subjects;
   },
+
+  async getAnalytics() {
+    const res = await api.get('/progress/analytics');
+    return res.data.data;
+  },
 };

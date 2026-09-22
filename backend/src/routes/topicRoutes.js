@@ -5,5 +5,6 @@ const { authenticate } = require('../middlewares/authMiddleware');
 
 router.get('/:topicId', authenticate, topicController.getTopic);
 router.get('/:topicId/lesson', authenticate, topicController.getLesson);
+router.post('/:topicId/complete', authenticate, topicController.markTopicCompleted);
 
 module.exports = router;

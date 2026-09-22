@@ -20,7 +20,29 @@ async function getDayDetails(req, res, next) {
   }
 }
 
+async function setCurrentDay(req, res, next) {
+  try {
+    const { dayNumber } = req.body;
+    const result = await scheduleService.setCurrentDay(req.user.id, dayNumber);
+    return ApiResponse.success(res, `Current study day set to Day ${result.current_day}`, result);
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function getBacklog(req, res, next) {
+  try {
+    const dayNumber = req.query.dayNumber ? parseInt(req.query.dayNumber, 10) : null;
+    const backlog = await scheduleService.getBacklog(req.user.id, dayNumber);
+    return ApiResponse.success(res, 'Backlog topics retrieved', backlog);
+  } catch (error) {
+    next(error);
+  }
+}
+
 module.exports = {
   getSchedule,
   getDayDetails,
+  setCurrentDay,
+  getBacklog,
 };

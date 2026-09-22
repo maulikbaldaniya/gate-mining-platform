@@ -105,15 +105,21 @@ export default function Schedule() {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '14px',
-                borderLeft: day.is_completed ? '4px solid var(--accent-emerald)' : '4px solid var(--accent-blue)'
+                borderLeft: day.is_completed
+                  ? '4px solid var(--accent-emerald)'
+                  : day.is_overdue
+                  ? '4px solid #f59e0b'
+                  : day.is_current
+                  ? '4px solid #3b82f6'
+                  : '4px solid var(--border-subtle)'
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '6px' }}>
                     <span style={{
-                      background: 'rgba(59, 130, 246, 0.15)',
-                      color: '#60a5fa',
+                      background: day.is_current ? 'var(--accent-gold)' : day.is_overdue ? 'rgba(245, 158, 11, 0.2)' : 'rgba(59, 130, 246, 0.15)',
+                      color: day.is_current ? '#000' : day.is_overdue ? '#fbbf24' : '#60a5fa',
                       fontWeight: 700,
                       fontSize: '0.78rem',
                       padding: '2px 8px',
@@ -124,7 +130,18 @@ export default function Schedule() {
                     <h3 style={{ fontSize: '1.2rem' }}>{day.title}</h3>
                     {day.is_completed && (
                       <span className="badge badge-completed">
+                        <CheckCircle2 size={13} style={{ marginRight: '4px' }} />
                         Day Completed
+                      </span>
+                    )}
+                    {day.is_overdue && (
+                      <span className="badge" style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
+                        ⚠️ Incomplete Backlog
+                      </span>
+                    )}
+                    {day.is_current && !day.is_completed && (
+                      <span className="badge badge-learning">
+                        Active Today
                       </span>
                     )}
                   </div>
