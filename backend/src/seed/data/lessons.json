@@ -87,7 +87,7 @@
         "level_number": 3,
         "section_type": "BASIC_CONCEPTS",
         "title": "Level 3: Basic Concepts (મૂળભૂત સિદ્ધાંતો)",
-        "content_text": "1. Burden (B): Hole અને સૌથી નજીકના free face વચ્ચેનું perpendicular (લંબ) અંતર.\n2. Spacing (S): એક જ હરોળમાં આવેલા પાસપાસેના holes વચ્ચેનું અંતર. સામાન્ય રીતે S = 1.15*B થી 1.5*B રાખવામાં આવે છે.\n3. Bench Height (H): Excavation step ની vertical ઊંચાઈ.\n4. Stemming (T): Drill hole નો ઉપરનો ભાગ જેને inert material (રેતી, drill cuttings) થી પેક કરવામાં આવે છે જેથી explosive gas બહાર ન નીકળી જાય.\n5. Sub-drilling (J): Grade line ની નીચે કરવામાં આવતું વધારાનું drilling જેથી toe (નીચેનો ભાગ) બાકી ન રહી જાય. સામાન્ય રીતે J = 0.2*B થી 0.3*B હોય છે.\n6. Powder Factor (PF):\n- Opencast Coal: પ્રતિ kg explosive દીઠ તૂટતો ખડક (m3/kg)\n- Opencast Metal: પ્રતિ kg explosive દીઠ તૂટતું ore (tonnes/kg).",
+        "content_text": "[DIAGRAM: BLAST_GEOMETRY|Bench Blast Hole Geometry: Burden, Spacing, Stemming, Subgrade]\n\n1. Burden (B): Hole અને સૌથી નજીકના free face વચ્ચેનું perpendicular (લંબ) અંતર.\n2. Spacing (S): એક જ હરોળમાં આવેલા પાસપાસેના holes વચ્ચેનું અંતર. સામાન્ય રીતે S = 1.15*B થી 1.5*B રાખવામાં આવે છે.\n3. Bench Height (H): Excavation step ની vertical ઊંચાઈ.\n4. Stemming (T): Drill hole નો ઉપરનો ભાગ જેને inert material (રેતી, drill cuttings) થી પેક કરવામાં આવે છે જેથી explosive gas બહાર ન નીકળી જાય.\n5. Sub-drilling (J): Grade line ની નીચે કરવામાં આવતું વધારાનું drilling જેથી toe (નીચેનો ભાગ) બાકી ન રહી જાય. સામાન્ય રીતે J = 0.2*B થી 0.3*B હોય છે.\n6. Powder Factor (PF):\n- Opencast Coal: પ્રતિ kg explosive દીઠ તૂટતો ખડક (m3/kg)\n- Opencast Metal: પ્રતિ kg explosive દીઠ તૂટતું ore (tonnes/kg).",
         "order_index": 3
       },
       {
@@ -151,7 +151,7 @@
         "level_number": 3,
         "section_type": "BASIC_CONCEPTS",
         "title": "Level 3: Basic Concepts (મૂળભૂત સિદ્ધાંતો)",
-        "content_text": "1. Atkinson's Law of Mine Ventilation:\nVentilation pressure drop (P) એ airway ના friction factor, rubbing surface area, અને air velocity ના વર્ગ (square of velocity) ના સમપ્રમાણમાં હોય છે.\n\n2. Square Law of Airflow:\nP = R * Q^2\nજ્યાં P = Pressure drop (Pa), R = Airway Resistance (Ns^2/m^8 અથવા kg/m^7), Q = Airflow quantity (m3/s).\n\n3. Resistance ના સંબંધો:\n- Series Airway (શ્રેણી જોડાણ): કુલ Resistance R_total = R1 + R2 + R3 + ...\n- Parallel Airway (સમાંતર જોડાણ): 1 / sqrt(R_total) = 1 / sqrt(R1) + 1 / sqrt(R2) + ...\n\n4. Equivalent Orifice (Murgue નું સૂત્ર):\nA_eq = 0.385 / sqrt(R)  [m2 માં, પ્રમાણભૂત હવાની ઘનતા 1.2 kg/m3 માટે].",
+        "content_text": "[DIAGRAM: VENTILATION_SPLIT|Mine Airflow Distribution & Ventilation Network Splits]\n\n1. Atkinson's Law of Mine Ventilation:\nVentilation pressure drop (P) એ airway ના friction factor, rubbing surface area, અને air velocity ના વર્ગ (square of velocity) ના સમપ્રમાણમાં હોય છે.\n\n2. Square Law of Airflow:\nP = R * Q^2\nજ્યાં P = Pressure drop (Pa), R = Airway Resistance (Ns^2/m^8 અથવા kg/m^7), Q = Airflow quantity (m3/s).\n\n3. Resistance ના સંબંધો:\n- Series Airway (શ્રેણી જોડાણ): કુલ Resistance R_total = R1 + R2 + R3 + ...\n- Parallel Airway (સમાંતર જોડાણ): 1 / sqrt(R_total) = 1 / sqrt(R1) + 1 / sqrt(R2) + ...\n\n4. Equivalent Orifice (Murgue નું સૂત્ર):\nA_eq = 0.385 / sqrt(R)  [m2 માં, પ્રમાણભૂત હવાની ઘનતા 1.2 kg/m3 માટે].",
         "order_index": 3
       },
       {

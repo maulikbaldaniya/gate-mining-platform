@@ -9,8 +9,10 @@ import {
   ArrowRight,
   CheckCircle2,
   AlertCircle,
-  ExternalLink
+  ExternalLink,
+  Image as ImageIcon
 } from 'lucide-react';
+import MiningDiagram from '../components/common/MiningDiagram';
 
 export default function TopicDetails() {
   const { topicId } = useParams();
@@ -58,6 +60,107 @@ export default function TopicDetails() {
       setMarkingCompleted(false);
     }
   };
+
+function resolveDiagram(topic, section) {
+  if (!topic || !section) return null;
+
+  if (section.diagram_type) {
+    return {
+      type: section.diagram_type,
+      caption: section.diagram_caption || `${topic.name} Engineering Diagram`,
+    };
+  }
+
+  const raw = section.content_text || '';
+  const match = raw.match(/\[DIAGRAM:\s*([A-Z_]+)(?:\|([^\]]+))?\]/);
+  if (match) {
+    return {
+      type: match[1],
+      caption: match[2] || `${topic.name} Engineering Diagram`,
+    };
+  }
+
+  const name = (topic.name || '').toLowerCase();
+  const lvl = section.level_number;
+
+  // 1. Blast Design, Burden, Spacing, Flyrock, Underwater
+  if (name.includes('blast') || name.includes('drilling') || name.includes('explosive')) {
+    if (name.includes('underwater')) {
+      if (lvl >= 3) return { type: 'UNDERWATER_BLASTING_TREE', caption: 'Underwater Rock Blasting: Explosive & Non-Electric Detonator Decision Tree (GATE 2026 Q47)' };
+    }
+    if (lvl === 3 || lvl === 4 || lvl === 5) {
+      return { type: 'BLAST_GEOMETRY', caption: 'Bench Blast Hole Geometry: Burden (B), Spacing (S), Stemming (T), Subgrade (J), Bench Height (H)' };
+    }
+  }
+
+  // 2. Cut Patterns, Drivage, Heading, Tunnels
+  if (name.includes('cut') || name.includes('drivage') || name.includes('tunneling') || name.includes('heading')) {
+    if (lvl === 3 || lvl === 4 || lvl === 6) {
+      return { type: 'CUT_PATTERNS', caption: 'Underground Cut Patterns: Pyramid Cut (GATE 2023) vs Burn Cut (GATE 2016)' };
+    }
+  }
+
+  // 3. Mohr-Coulomb, Triaxial, Pore pressure
+  if (name.includes('mohr') || name.includes('triaxial') || name.includes('failure criteria') || name.includes('shear strength')) {
+    if (lvl === 3 || lvl === 4 || lvl === 5) {
+      return { type: 'MOHR_CIRCLE', caption: "Mohr's Circle of Stress & Saturated Pore Pressure (p) Shift to Failure Envelope (GATE 2022 Q24)" };
+    }
+  }
+
+  // 4. Kirsch Stresses, In-situ stress ratio k, Circular Tunnel
+  if (name.includes('kirsch') || name.includes('in-situ') || name.includes('tangential stress') || (name.includes('stress') && name.includes('tunnel'))) {
+    if (lvl === 3 || lvl === 4 || lvl === 6) {
+      return { type: 'KIRSCH_STRESS', caption: 'Kirsch Tangential Stress Distribution around Circular Tunnel in Biaxial Stress Field (GATE 2022-2024)' };
+    }
+  }
+
+  // 5. Slope Stability, Planar failure, Bench geometry
+  if (name.includes('slope') || name.includes('bench') || name.includes('pit') || name.includes('rock bolt')) {
+    if (name.includes('overall') || name.includes('pit slope')) {
+      if (lvl >= 3) return { type: 'BENCH_PIT_GEOMETRY', caption: 'Multilevel Pit Slope Geometry & Overall Angle α Calculation (GATE 2025 Q24)' };
+    }
+    if (lvl === 3 || lvl === 4 || lvl === 5) {
+      return { type: 'SLOPE_PLANAR_FAILURE', caption: 'Opencast Bench Planar Sliding Failure with Water-Filled Tension Crack & Rock Bolt (GATE 2012-2019)' };
+    }
+  }
+
+  // 6. Hydraulic prop, Support, Strata
+  if (name.includes('support') || name.includes('hydraulic prop') || name.includes('strata') || name.includes('ground control')) {
+    if (lvl === 3 || lvl === 4 || lvl === 7) {
+      return { type: 'HYDRAULIC_PROP_CURVE', caption: 'Hydraulic Prop Load-Deformation Yield Curve vs Friction / Brittle Props (GATE 2026 Q99)' };
+    }
+  }
+
+  // 7. Evasee duct, Ventilation exhaust fan
+  if (name.includes('evasee') || name.includes('exhaust') || name.includes('fan pressure')) {
+    if (lvl === 3 || lvl === 4 || lvl === 5) {
+      return { type: 'EVASEE_DUCT', caption: 'Diverging Evasee Duct fitted to Exhaust Fan: Velocity Head to Static Pressure Regain (GATE 2023 & 2026)' };
+    }
+  }
+
+  // 8. Ventilation split, Booster fan, Airflow network
+  if (name.includes('ventilation') || name.includes('split') || name.includes('airflow') || name.includes('atkinson')) {
+    if (lvl === 3 || lvl === 4 || lvl === 6) {
+      return { type: 'VENTILATION_SPLIT', caption: 'Parallel Mine Ventilation Network: District A & B with Booster Fan Equalization (GATE 2023 & 2026)' };
+    }
+  }
+
+  // 9. Semi-variogram, Geostatistics, Kriging
+  if (name.includes('variogram') || name.includes('geostat') || name.includes('kriging')) {
+    if (lvl === 3 || lvl === 4 || lvl === 5) {
+      return { type: 'VARIOGRAM_MODELS', caption: 'Semi-Variogram Models: Spherical, Exponential, Gaussian, Pure Nugget (Nugget C0, Sill C, Range a)' };
+    }
+  }
+
+  // 10. Mineral Sampling, Borehole, Polygon Voronoi area
+  if (name.includes('sampling') || name.includes('grade') || name.includes('reserve') || name.includes('polygon') || name.includes('borehole')) {
+    if (lvl === 3 || lvl === 4 || lvl === 6) {
+      return { type: 'POLYGON_AREA', caption: 'Area-of-Influence Polygon Method for Borehole Core Grade Weighting (GATE 2026 Q47)' };
+    }
+  }
+
+  return null;
+}
 
   if (loading) return <LoadingSpinner message="Loading topic modules & structured lessons..." />;
   if (!topic) return <div className="page-wrapper">Topic not found.</div>;
@@ -144,25 +247,49 @@ export default function TopicDetails() {
         </div>
 
         <div className="level-tabs">
-          {lesson?.sections?.map((sec) => (
-            <button
-              key={sec.level_number}
-              onClick={() => setActiveLevel(sec.level_number)}
-              className={`level-tab-btn ${activeLevel === sec.level_number ? 'active' : ''}`}
-            >
-              Level {sec.level_number}: {sec.title.split(':')[1] || sec.title}
-            </button>
-          ))}
+          {lesson?.sections?.map((sec) => {
+            const hasDiag = resolveDiagram(topic, sec);
+            return (
+              <button
+                key={sec.level_number}
+                onClick={() => setActiveLevel(sec.level_number)}
+                className={`level-tab-btn ${activeLevel === sec.level_number ? 'active' : ''}`}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+              >
+                <span>Level {sec.level_number}: {sec.title.split(':')[1] || sec.title}</span>
+                {hasDiag && (
+                  <span title="આ સ્તરમાં ઈજનેરી આકૃતિ છે" style={{ fontSize: '0.75rem' }}>📐</span>
+                )}
+              </button>
+            );
+          })}
         </div>
 
         {/* Section Content Display */}
         {currentSection ? (
           <div className="lesson-section-content">
-            <h3 style={{ fontSize: '1.25rem', color: 'var(--accent-blue)', marginBottom: '16px', fontWeight: 700 }}>
-              {currentSection.title}
-            </h3>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px', marginBottom: '16px' }}>
+              <h3 style={{ fontSize: '1.25rem', color: 'var(--accent-blue)', margin: 0, fontWeight: 700 }}>
+                {currentSection.title}
+              </h3>
+              {resolveDiagram(topic, currentSection) && (
+                <span className="badge badge-completed" style={{ fontSize: '0.76rem', gap: '5px' }}>
+                  <ImageIcon size={13} />
+                  ઈજનેરી આકૃતિ (Engineering Diagram Active)
+                </span>
+              )}
+            </div>
+
+            {/* Display Diagram if resolved */}
+            {resolveDiagram(topic, currentSection) && (
+              <MiningDiagram
+                type={resolveDiagram(topic, currentSection).type}
+                caption={resolveDiagram(topic, currentSection).caption}
+              />
+            )}
+
             <p style={{ color: 'var(--text-main)', lineHeight: 1.85, fontSize: '1.05rem', whiteSpace: 'pre-line' }}>
-              {currentSection.content_text}
+              {(currentSection.content_text || '').replace(/\[DIAGRAM:[^\]]+\]/g, '').trim()}
             </p>
           </div>
         ) : (

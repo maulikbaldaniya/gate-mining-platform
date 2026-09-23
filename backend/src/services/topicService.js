@@ -122,6 +122,285 @@ function generateGujaratiSections(topic) {
     ];
   }
 
+  // 1. Blast Design, Burden, Spacing, Explosives (GATE MN 2010-2026 Reference)
+  if (/blast|burden|spacing|powder factor|explosive/i.test(name)) {
+    return [
+      {
+        level_number: 1,
+        section_type: 'CONCEPT_INTRO',
+        title: 'Level 1: What is Blast Design? (બ્લાસ્ટ ડિઝાઇન અને પરિમાણો)',
+        content_text: `Blast Design એ opencast અને underground mines માં ખડકોના વિભાજન (Rock Fragmentation) માટે blast holes ની ભૌમિતિક ગોઠવણી, વિસ્ફોટક (Explosive) નો જથ્થો, અને સલામત delay timing નક્કી કરવાની પદ્ધતિ છે. આમાં Free Face (મુક્ત સપાટી), Burden (B), Spacing (S), Bench Height (H), Collar Stemming (T), અને Sub-drilling (J) મુખ્ય ઘટકો છે. VCR Stope માં ગોળાકાર વિસ્ફોટક (Spherical charge) માટે શરત lc / d = 6 હોય છે (GATE 2024 Q1).`,
+      },
+      {
+        level_number: 2,
+        section_type: 'IMPORTANCE',
+        title: 'Level 2: GATE MN Weightage (પરીક્ષામાં મહત્વ અને ઉપયોગિતા)',
+        content_text: `GATE Mining Engineering માં Blast Design અને Explosives પરથી દર વર્ષે 4 થી 6 ગુણના numericals પૂછાય છે. મુખ્ય પ્રશ્નો: Powder Factor (m³/kg અથવા t/kg), Relative Bulk Strength (RBS), Electric Delay Detonator Circuit Resistance (GATE 2024), Scaled Distance PPV Ground Vibration (GATE 2020-2026), અને Underwater Blasting Selection (GATE 2026).`,
+      },
+      {
+        level_number: 3,
+        section_type: 'BASIC_CONCEPTS',
+        title: 'Level 3: Blast Geometry & Technical Definitions (મૂળભૂત સિદ્ધાંતો)',
+        content_text: `[DIAGRAM: BLAST_GEOMETRY|Bench Blast Hole Geometry: Burden, Spacing, Stemming, Subgrade]
+મુખ્ય ઈજનેરી પરિમાણો (Engineering Parameters):
+1. Burden (B): Blast hole અને નજીકની મુક્ત સપાટી (Free face) વચ્ચેનું લંબ અંતર.
+2. Spacing (S): એક જ હરોળના બે પાસપાસેના holes વચ્ચેનું અંતર (સામાન્ય રીતે S = 1.15·B થી 1.4·B).
+3. Stemming (T): Drill hole નો ઉપરનો ભાગ જે બ્લાસ્ટિંગ દરમિયાન વાયુઓને બહાર નીકળતા રોકે છે (T ≈ 20·D થી 25·D).
+4. Subgrade Drilling (J): ફ્લોર લેવલ નીચે વધારાનું કાણું જેથી ફ્લોર પર 'Toe' ન રહી જાય (J ≈ 8·D થી 10·D).
+5. Column Charge Length (Lc): Lc = (Bench Height + Subgrade) - Stemming.`,
+      },
+      {
+        level_number: 4,
+        section_type: 'FORMULAS',
+        title: 'Level 4: Essential GATE Formulas (આવશ્યક ગાણિતિક સૂત્રો)',
+        content_text: `GATE MN 2010-2026 ના પ્રમાણભૂત સૂત્રો:
+1. Powder Factor (PF):
+   PF = (B × S × H) / Explosive_in_kg  [m³/kg]
+   અથવા PF = (B × S × H × ρ_rock) / Explosive_in_kg  [tonne/kg]
+2. Relative Bulk Strength (RBS):
+   RBS = (ρ_exp × E_exp) / (ρ_ANFO × E_ANFO) × 100
+3. Blasting Circuit Total Resistance (GATE 2024):
+   R_total = (n × R_det) + [n × 2 × L_lead × R_lead] + [2 × L_cable × R_cable]
+4. USBM Ground Vibration Law (PPV):
+   PPV = K · [D / √Q]^(-β)
+   જ્યાં D = અંતર (m), Q = Delay દીઠ મહત્તમ instantaneous charge (kg), K, β = Site constants.
+5. VCR Spherical Charge Criterion:
+   lc / d = 6  (જ્યાં d = hole diameter, lc = maximum charge length).`,
+      },
+      {
+        level_number: 5,
+        section_type: 'SIMPLE_EXAMPLE',
+        title: 'Level 5: Conceptual Example (સરળ દાખલો - GATE 2024)',
+        content_text: `પ્રશ્ન: એક VCR Stope માં 165 mm વ્યાસના blast holes ડ્રિલ કરવામાં આવેલ છે. Hole ને spherical charge તરીકે વર્તવા માટે મહત્તમ charge length (lc) કેટલી હોવી જોઈએ?
+ઉકેલ:
+Spherical charge માટે પ્રમાણભૂત શરત:
+lc / d = 6
+lc = 6 × d = 6 × 0.165 m = 0.99 m.
+જવાબ: 0.99 m (GATE 2024 Q1).`,
+      },
+      {
+        level_number: 6,
+        section_type: 'GATE_EXAMPLE',
+        title: 'Level 6: Advanced GATE 2-Mark Numerical (GATE 2024 Q3)',
+        content_text: `પ્રશ્ન: એક કોલસાના face માં 12 holes સીરીઝમાં જોડાયેલા electric delay detonators વડે બ્લાસ્ટ કરવામાં આવે છે.
+ડેટા:
+• Detonator resistance = 1.48 Ω દરેકનું
+• Lead wire length = 1.5 m (બંને વાયરો માટે 1.5 + 1.5 = 3.0 m)
+• Lead wire resistance = 0.04 Ω/m
+• Blasting cable length = 120 m (2 core wire)
+• Cable resistance = 0.009 Ω/m per wire
+સમગ્ર સર્કિટનો કુલ રેઝિસ્ટન્સ (R) શોધો.
+
+ઉકેલ:
+1. Detonators નો રેઝિસ્ટન્સ: R_det = 12 × 1.48 = 17.76 Ω
+2. Lead wires નો રેઝિસ્ટન્સ: R_lead = 12 × (1.5 + 1.5) × 0.04 = 1.44 Ω
+3. Blasting cable નો રેઝિસ્ટન્સ: R_cable = 0.009 × 120 × 2 = 2.16 Ω
+કુલ રેઝિસ્ટન્સ R = 17.76 + 1.44 + 2.16 = 21.36 Ω.
+જવાબ: 21.36 Ω.`,
+      },
+      {
+        level_number: 7,
+        section_type: 'PYQ_REVIEW',
+        title: 'Level 7: Common GATE Traps (સામાન્ય ભૂલો અને ટ્રેપ્સ)',
+        content_text: `GATE Traps & Mistakes:
+1. PPV સૂત્રમાં ભૂલ: PPV = K·[D/√Q]^(-β) માં Q એ 'Total Explosive' નથી, પરંતુ 'Maximum Instantaneous Charge per Delay' છે (GATE 2026 Q48).
+2. Blasting Cable માં 2 વાયરો હોય છે, તેથી લંબાઈને 2 વડે ગુણવાનું ક્યારેય ભૂલવું નહીં.
+3. Underwater Blasting (GATE 2026 Q47): ANFO પાણીમાં ઓગળી જાય છે (Non-water resistant) તેથી Emulsion વપરાય છે. Electric detonators માં stray current નો ભય રહે છે તેથી Non-Electric Shock Tube વાપરવી જોઈએ.`,
+      },
+      {
+        level_number: 8,
+        section_type: 'TIMED_PRACTICE',
+        title: 'Level 8: Exam Checklist & Mastery (ક્વિક રિવિઝન)',
+        content_text: `ચેકલિસ્ટ:
+✓ lc / d = 6 (VCR Stope Spherical Charge)
+✓ Powder factor = Volume / Explosive (m³/kg) અથવા Tonnes / Explosive (t/kg)
+✓ Subgrade drilling J = 8D to 10D
+✓ Stemming T = 20D to 25D
+✓ PPV = K·(D/√Q)^(-β)
+હવે નીચે આપેલ ક્વિઝ શરૂ કરો!`,
+      },
+    ];
+  }
+
+  // 2. Geomechanics: Kirsch Equations & In-situ Stresses around Circular Tunnel
+  if (/kirsch|insitu stress|stress concentration|tangential stress/i.test(name)) {
+    return [
+      {
+        level_number: 1,
+        section_type: 'CONCEPT_INTRO',
+        title: 'Level 1: What are Kirsch Equations? (કિર્શ સમીકરણો શું છે?)',
+        content_text: `જ્યારે ખડકમાં ભૂગર્ભ ટનલ (Circular Opening) ખોદવામાં આવે છે, ત્યારે મૂળ ઇન-સીટુ સ્ટ્રેસ ફિલ્ડ પુનઃવહેંચાય છે. ટનલની આસપાસ ઉત્પન્ન થતા Tangential Stress (σθθ) અને Radial Stress (σr) ની ગણતરી કરવા માટે Kirsch Equations નો ઉપયોગ થાય છે.`,
+      },
+      {
+        level_number: 2,
+        section_type: 'IMPORTANCE',
+        title: 'Level 2: GATE Weightage (પરીક્ષામાં મહત્વ)',
+        content_text: `GATE 2022 (Q26), GATE 2023 (Q13), અને GATE 2024 (Q5) માં સીધા કિર્શ સમીકરણોના આધારે In-situ Stress Ratio (k) અને Tangential Stress ગણવાના 2-mark પ્રશ્નો પૂછાયા છે.`,
+      },
+      {
+        level_number: 3,
+        section_type: 'BASIC_CONCEPTS',
+        title: 'Level 3: Boundary Stress Distribution (મૂળભૂત સિદ્ધાંતો)',
+        content_text: `[DIAGRAM: KIRSCH_STRESS|Kirsch Tangential Stress Distribution around Circular Opening]
+ટનલની સપાટી પર (Boundary at r = a):
+1. Radial Stress: σr = 0 (મુક્ત આંતરિક સપાટી પર શૂન્ય હોય છે).
+2. Tangential Stress (σθθ):
+   σθθ = Po · [ (1 + k) + 2(1 - k)cos(2θ) ]
+   જ્યાં Po = ઊભો સ્ટ્રેસ (Vertical Stress), k = Horizontal to Vertical Stress Ratio (k = σh / σv).
+3. Sidewall (Point A, θ = 0°):
+   σθθ(A) = Po · (3 - k)
+4. Crown / Roof (Point B, θ = 90°):
+   σθθ(B) = Po · (3k - 1).`,
+      },
+      {
+        level_number: 4,
+        section_type: 'FORMULAS',
+        title: 'Level 4: Formulas & Relations (મહત્વપૂર્ણ સૂત્રો)',
+        content_text: `1. Kirsch Boundary Formula:
+   σθθ = Po · [ (1 + k) + 2(1 - k)cos(2θ) ]
+2. Ratio Condition (GATE 2022 Q26):
+   જો Sidewall (Point A) પરનો સ્ટ્રેસ Crown (Point B) કરતાં 3 ગણો હોય:
+   Po(3 - k) = 3 · Po(3k - 1)  ➔  k = 0.6  (અથવા વિપરીત શરત મુજબ k = 2).
+3. Hydrostatic Field (k = 1):
+   σθθ = 2·Po (તમામ બિંદુઓ પર સમાન સ્ટ્રેસ).`,
+      },
+      {
+        level_number: 5,
+        section_type: 'SIMPLE_EXAMPLE',
+        title: 'Level 5: Conceptual Example (GATE 2023 Q13)',
+        content_text: `પ્રશ્ન: Biaxial stress field માં બનેલ ગોળાકાર ટનલ માટે જો boundary point A (θ=0°) અને point B (θ=45°) વચ્ચે tangential stress નો ગુણોત્તર σθθ(A)/σθθ(B) = 2.0 હોય, તો k ની કિંમત શોધો.
+ઉકેલ:
+σθθ(A) = Po(3 - k)
+θ = 45° માટે cos(2 × 45°) = cos(90°) = 0, તેથી:
+σθθ(B) = Po(1 + k)
+σθθ(A) / σθθ(B) = (3 - k) / (1 + k) = 2.0
+3 - k = 2 + 2k  ➔  3k = 1  ➔  k = 1/3 = 0.33.
+જવાબ: k = 0.33.`,
+      },
+      {
+        level_number: 6,
+        section_type: 'GATE_EXAMPLE',
+        title: 'Level 6: Depth & Overburden Problem (GATE 2024 Q5)',
+        content_text: `પ્રશ્ન: 100 m ઊંડાઈએ 27 kN/m³ ઘનતા ધરાવતા રોકમાં ટનલ બનાવવામાં આવી છે. જો પોઇન્ટ A (હૉરિઝોન્ટલ બાઉન્ડ્રી) પર સ્ટ્રેસ 5 MPa હોય, તો પોઇન્ટ B (વર્ટિકલ ક્રાઉન) પર tangential stress ગણો.
+ઉકેલ:
+Po = γ · H = 27 × 10³ × 100 N/m² = 2.7 MPa.
+Point A પર: σθθ(A) = Po(3 - k)
+5 = 2.7(3 - k)  ➔  3 - k = 5 / 2.7 = 1.85  ➔  k = 1.15.
+Point B (Crown, θ = 90°) પર:
+σθθ(B) = 2.7 · [(1 + 1.15) + 2(1 - 1.15)cos(180°)]
+σθθ(B) = 2.7 · [2.15 + 2(-0.15)(-1)] = 2.7 · [2.15 + 0.30] = 6.62 MPa.
+જવાબ: 6.62 MPa.`,
+      },
+      {
+        level_number: 7,
+        section_type: 'PYQ_REVIEW',
+        title: 'Level 7: Traps & Tips (ટ્રીકી પોઇન્ટ્સ)',
+        content_text: `ખાસ યાદ રાખો:
+• θ નો ખૂણો હંમેશા Horizontal Axis થી મપાય છે: Sidewall પર θ = 0°, Crown પર θ = 90°.
+• જો k < 1/3 હોય, તો ટનલના Roof (Crown) પર Tensile Stress ઉત્પન્ન થાય છે અને છાપરું તૂટી પડવાનો ભય રહે છે!`,
+      },
+      {
+        level_number: 8,
+        section_type: 'TIMED_PRACTICE',
+        title: 'Level 8: Final Summary (ક્વિક રિવિઝન)',
+        content_text: `✓ σθθ(Sidewall) = Po(3 - k)
+✓ σθθ(Crown) = Po(3k - 1)
+✓ σθθ(45°) = Po(1 + k)
+✓ Hydrostatic (k=1) ➔ σθθ = 2Po.
+હવે ટેસ્ટ આપીને વિષય પૂર્ણ કરો!`,
+      },
+    ];
+  }
+
+  // 3. Geomechanics: Mohr-Coulomb & Pore Pressure Shift
+  if (/mohr|triaxial|shear strength|pore pressure/i.test(name)) {
+    return [
+      {
+        level_number: 1,
+        section_type: 'CONCEPT_INTRO',
+        title: 'Level 1: What is Mohr-Coulomb Failure Criteria? (મોહર-કુલંબ સિદ્ધાંત)',
+        content_text: `Mohr-Coulomb Criterion એ ખડકો અને જમીનની શિયર સ્ટ્રેન્થ (Shear Strength) માપવા માટેનો સર્વમાન્ય સિદ્ધાંત છે. તેના મુજબ ખડકની મજબૂતાઈ Cohesion (c) અને Angle of Internal Friction (φ) પર નિર્ભર કરે છે. જ્યારે ખડકમાં પાણી ભરાય છે (Pore Water Pressure - p), ત્યારે Effective Normal Stress ઘટી જાય છે, જેનાથી Mohr Circle ડાબી બાજુ ખસે છે અને ખડક ઝડપથી ફેલ થાય છે.`,
+      },
+      {
+        level_number: 2,
+        section_type: 'IMPORTANCE',
+        title: 'Level 2: GATE Weightage (પરીક્ષામાં મહત્વ)',
+        content_text: `GATE 2022 (Q24), GATE 2023 (Q8), અને GATE 2024 (Q2) માં સીધા Mohr-Coulomb Envelope અને Pore Pressure Shift પર પ્રશ્નો પૂછાયા છે.`,
+      },
+      {
+        level_number: 3,
+        section_type: 'BASIC_CONCEPTS',
+        title: 'Level 3: Failure Envelope & Pore Pressure (મૂળભૂત સિદ્ધાંતો)',
+        content_text: `[DIAGRAM: MOHR_CIRCLE|Mohr Circle of Stress & Pore Pressure Saturation Shift]
+મુખ્ય સિદ્ધાંતો:
+1. Coulomb Equation: τ = c + σn · tan(φ)
+   જ્યાં c = Cohesion (MPa), φ = Friction angle, σn = Normal stress.
+2. Effective Stress Principle (Terzaghi):
+   σ' = σ - p (જ્યાં p = Pore water pressure).
+3. Circle Shift (GATE 2022 Q24):
+   ડ્રાય રોકમાં સર્કલ (σ3, σ1) પર હોય છે. પાણી ભરાતાં સર્કલ ડાબી બાજુ ખસીને (σ3 - p, σ1 - p) બની જાય છે અને ફેલિયર એન્વલપને સ્પર્શે છે!`,
+      },
+      {
+        level_number: 4,
+        section_type: 'FORMULAS',
+        title: 'Level 4: Mathematical Relations (મહત્વપૂર્ણ સૂત્રો)',
+        content_text: `1. Triaxial Failure Equation:
+   σ1 = σ3 · tan²(45° + φ/2) + 2c · tan(45° + φ/2)
+2. Shear Stress at Failure Plane:
+   τ = [(σ1 - σ3) / 2] · cos(φ)
+3. Angle of Failure Plane with Minor Principal Axis (σ3):
+   θ = 45° + φ/2
+4. UCS (Uniaxial Compressive Strength Co):
+   Co = 2c · cos(φ) / (1 - sin(φ))
+5. Tensile Strength (To):
+   To = 2c · cos(φ) / (1 + sin(φ))
+   Ratio Co / To = (1 + sin φ) / (1 - sin φ)  (GATE 2010 Q87).`,
+      },
+      {
+        level_number: 5,
+        section_type: 'SIMPLE_EXAMPLE',
+        title: 'Level 5: Simple Example (GATE 2023 Q8)',
+        content_text: `પ્રશ્ન: સેન્ડસ્ટોન માટે Mohr-Coulomb failure envelop σ1 = 30 + 3.5·σ3 છે. Failure plane નો σ3 axis સાથેનો ખૂણો ડિગ્રીમાં શોધો.
+ઉકેલ:
+Standard form: σ1 = Co + tan²(45° + φ/2) · σ3
+અહીં tan²(45° + φ/2) = 3.5
+tan(45° + φ/2) = √3.5 = 1.8708
+45° + φ/2 = tan⁻¹(1.8708) = 61.875°
+Failure plane નો ખૂણો θ = 45° + φ/2 = 61.88°.
+જવાબ: 61.9° (GATE 2023).`,
+      },
+      {
+        level_number: 6,
+        section_type: 'GATE_EXAMPLE',
+        title: 'Level 6: Advanced Triaxial Problem (GATE 2024 Q2)',
+        content_text: `પ્રશ્ન: સેન્ડસ્ટોન માટે τ = 7.5 + 0.84·σn (MPa) છે. Confining pressure σ3 = 5.0 MPa હોય ત્યારે failure વખતે Shear Stress (τ) શોધો.
+ઉકેલ:
+tan φ = 0.84 ➔ φ = 40.03°, c = 7.5 MPa.
+Co = 2c·cos φ / (1 - sin φ) = (2 × 7.5 × cos 40.03°) / (1 - sin 40.03°) = 32.19 MPa.
+σ1 = 4.63·σ3 + 32.19 = 4.63(5) + 32.19 = 55.34 MPa.
+τ = [(σ1 - σ3) / 2] · cos φ = [(55.34 - 5) / 2] · cos(40.03°) = 19.21 MPa.
+જવાબ: 19.21 MPa.`,
+      },
+      {
+        level_number: 7,
+        section_type: 'PYQ_REVIEW',
+        title: 'Level 7: Traps & Analysis (સામાન્ય ભૂલો)',
+        content_text: `• Normal Stress vs Principal Stress: τ એ failure plane પરનો shear stress છે, જ્યારે σ1, σ3 એ principal stresses છે જે planes પર shear stress શૂન્ય હોય છે.
+• Pore pressure વધવાથી સર્કલનો વ્યાસ (σ1 - σ3) બદલાતો નથી, માત્ર સર્કલ આખું ડાબી બાજુ ખસે છે!`,
+      },
+      {
+        level_number: 8,
+        section_type: 'TIMED_PRACTICE',
+        title: 'Level 8: Exam Checklist (ક્વિક રિવિઝન)',
+        content_text: `✓ τ = c + σn·tan φ
+✓ Failure angle θ = 45° + φ/2
+✓ UCS / Tensile = (1 + sin φ) / (1 - sin φ)
+✓ Saturated Pore Pressure p shifts circle left by p
+હવે ક્વિઝ આપો!`,
+      },
+    ];
+  }
+
   // Domain-specific defaults
   let domainFocus = 'mining engineering operations અને GATE પરીક્ષા';
   let practicalApplication = 'ખનન પ્રક્રિયાઓ (mine operations) અને સલામતી ધોરણો (DGMS standards)';
