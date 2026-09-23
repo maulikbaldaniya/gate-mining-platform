@@ -169,8 +169,9 @@ export default function DayDetails() {
                   gap: '12px',
                   padding: '12px 16px',
                   borderRadius: 'var(--radius-md)',
-                  background: 'rgba(0, 0, 0, 0.25)',
-                  border: '1px solid rgba(245, 158, 11, 0.2)'
+                  background: 'var(--bg-card)',
+                  border: '1px solid rgba(245, 158, 11, 0.3)',
+                  boxShadow: 'var(--shadow-sm)'
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

@@ -149,8 +149,9 @@ export default function Progress() {
                     alignItems: 'center',
                     padding: '10px 14px',
                     borderRadius: 'var(--radius-sm)',
-                    background: 'rgba(0, 0, 0, 0.3)',
-                    border: '1px solid rgba(245, 158, 11, 0.25)'
+                    background: 'var(--bg-card)',
+                    border: '1px solid rgba(245, 158, 11, 0.3)',
+                    boxShadow: 'var(--shadow-sm)'
                   }}
                 >
                   <div>
@@ -337,7 +338,7 @@ export default function Progress() {
                   alignItems: 'center',
                   padding: '10px 14px',
                   borderRadius: 'var(--radius-sm)',
-                  background: 'rgba(255, 255, 255, 0.02)',
+                  background: 'var(--bg-secondary)',
                   border: '1px solid var(--border-subtle)',
                   fontSize: '0.85rem'
                 }}

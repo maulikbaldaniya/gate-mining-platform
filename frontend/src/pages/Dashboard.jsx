@@ -150,8 +150,9 @@ export default function Dashboard() {
                   alignItems: 'center',
                   padding: '10px 14px',
                   borderRadius: 'var(--radius-sm)',
-                  background: 'rgba(0, 0, 0, 0.25)',
-                  border: '1px solid rgba(245, 158, 11, 0.2)'
+                  background: 'var(--bg-card)',
+                  border: '1px solid rgba(245, 158, 11, 0.3)',
+                  boxShadow: 'var(--shadow-sm)'
                 }}
               >
                 <div>
@@ -237,7 +238,7 @@ export default function Dashboard() {
                   justifyContent: 'space-between',
                   padding: '14px 18px',
                   borderRadius: 'var(--radius-md)',
-                  background: 'rgba(255, 255, 255, 0.03)',
+                  background: 'var(--bg-secondary)',
                   border: '1px solid var(--border-subtle)',
                 }}
               >
