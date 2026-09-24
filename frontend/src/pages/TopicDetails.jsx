@@ -10,7 +10,10 @@ import {
   CheckCircle2,
   AlertCircle,
   ExternalLink,
-  Image as ImageIcon
+  Image as ImageIcon,
+  ChevronLeft,
+  ChevronRight,
+  List
 } from 'lucide-react';
 import MiningDiagram from '../components/common/MiningDiagram';
 
@@ -19,6 +22,7 @@ export default function TopicDetails() {
   const [topic, setTopic] = useState(null);
   const [lesson, setLesson] = useState(null);
   const [activeLevel, setActiveLevel] = useState(1);
+  const [showAllLevels, setShowAllLevels] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -165,7 +169,8 @@ function resolveDiagram(topic, section) {
   if (loading) return <LoadingSpinner message="Loading topic modules & structured lessons..." />;
   if (!topic) return <div className="page-wrapper">Topic not found.</div>;
 
-  const currentSection = lesson?.sections?.find((s) => s.level_number === activeLevel) || lesson?.sections?.[0];
+  const sortedSections = [...(lesson?.sections || [])].sort((a, b) => a.level_number - b.level_number);
+  const currentSection = sortedSections.find((s) => s.level_number === activeLevel) || sortedSections[0];
   const isCompleted = topic.progress?.status === 'COMPLETED';
 
   return (
@@ -235,51 +240,169 @@ function resolveDiagram(topic, section) {
         </div>
       </div>
 
-      {/* 8-Level Tabs */}
+      {/* 8-Level Learning Progression Section */}
       <div className="glass-card" style={{ marginBottom: '24px', padding: '20px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-          <span style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase' }}>
-            8-Level Structured Learning Progression
-          </span>
-          <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)' }}>
-            ગુજરાતી Concept + English Technical Precision
-          </span>
+        {/* Header with Title and Progress */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' }}>
+          <div>
+            <span style={{ fontSize: '0.88rem', fontWeight: 800, color: 'var(--text-main)', textTransform: 'uppercase', letterSpacing: '0.03em' }}>
+              8-Level Structured Learning Progression
+            </span>
+            <span style={{ display: 'block', fontSize: '0.78rem', color: 'var(--text-dim)', marginTop: '2px' }}>
+              Level {activeLevel} of 8 ({Math.round((activeLevel / 8) * 100)}% Complete)
+            </span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)', fontWeight: 600 }}>
+              ગુજરાતી Concept + English Precision
+            </span>
+            <button
+              onClick={() => setShowAllLevels((prev) => !prev)}
+              className="btn btn-secondary btn-sm"
+              style={{ fontSize: '0.76rem', padding: '4px 10px', minHeight: '28px', gap: '5px' }}
+              title="Toggle list of all levels"
+            >
+              <List size={13} />
+              <span>{showAllLevels ? 'Close List' : 'All 8 Levels'}</span>
+            </button>
+          </div>
         </div>
 
-        <div className="level-tabs">
-          {lesson?.sections?.map((sec) => {
+        {/* Thin Stepper Progress Bar */}
+        <div style={{ width: '100%', height: '4px', background: 'var(--bg-secondary)', borderRadius: '2px', overflow: 'hidden', marginBottom: '14px' }}>
+          <div style={{ width: `${(activeLevel / 8) * 100}%`, height: '100%', background: 'linear-gradient(90deg, var(--accent-blue), var(--accent-emerald))', transition: 'width 0.25s ease' }} />
+        </div>
+
+        {/* Compact 8-Button Stepper Grid (Fits 100% on any mobile screen without horizontal scroll!) */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '6px', marginBottom: '14px' }}>
+          {sortedSections.map((sec) => {
+            const isActive = activeLevel === sec.level_number;
             const hasDiag = resolveDiagram(topic, sec);
             return (
               <button
                 key={sec.level_number}
                 onClick={() => setActiveLevel(sec.level_number)}
-                className={`level-tab-btn ${activeLevel === sec.level_number ? 'active' : ''}`}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '7px 2px',
+                  borderRadius: 'var(--radius-sm)',
+                  background: isActive ? 'var(--accent-blue)' : 'var(--bg-secondary)',
+                  border: isActive ? '1.5px solid var(--accent-blue)' : '1px solid var(--border-subtle)',
+                  color: isActive ? '#ffffff' : 'var(--text-main)',
+                  fontWeight: isActive ? 800 : 600,
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                  boxShadow: isActive ? '0 2px 8px rgba(37, 99, 235, 0.35)' : 'none',
+                }}
+                title={`Level ${sec.level_number}: ${sec.title}`}
               >
-                <span>Level {sec.level_number}: {sec.title.split(':')[1] || sec.title}</span>
-                {hasDiag && (
-                  <span title="આ સ્તરમાં ઈજનેરી આકૃતિ છે" style={{ fontSize: '0.75rem' }}>📐</span>
-                )}
+                <span style={{ fontSize: '0.85rem', lineHeight: 1 }}>{sec.level_number}</span>
+                <span style={{ fontSize: '0.62rem', marginTop: '2px', opacity: isActive ? 0.95 : 0.7 }}>
+                  {hasDiag ? '📐 L' + sec.level_number : 'L' + sec.level_number}
+                </span>
               </button>
             );
           })}
         </div>
 
-        {/* Section Content Display */}
-        {currentSection ? (
-          <div className="lesson-section-content">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px', marginBottom: '16px' }}>
-              <h3 style={{ fontSize: '1.25rem', color: 'var(--accent-blue)', margin: 0, fontWeight: 700 }}>
-                {currentSection.title}
-              </h3>
+        {/* Expandable Overview of All 8 Levels */}
+        {showAllLevels && (
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+            gap: '8px',
+            marginBottom: '16px',
+            padding: '12px',
+            background: 'var(--bg-secondary)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-subtle)'
+          }}>
+            {sortedSections.map((sec) => (
+              <button
+                key={sec.level_number}
+                onClick={() => {
+                  setActiveLevel(sec.level_number);
+                  setShowAllLevels(false);
+                }}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '8px 12px',
+                  borderRadius: 'var(--radius-sm)',
+                  background: activeLevel === sec.level_number ? 'var(--accent-blue-bg)' : 'var(--bg-card)',
+                  border: activeLevel === sec.level_number ? '1.5px solid var(--accent-blue)' : '1px solid var(--border-subtle)',
+                  color: activeLevel === sec.level_number ? 'var(--accent-blue)' : 'var(--text-main)',
+                  fontSize: '0.84rem',
+                  fontWeight: activeLevel === sec.level_number ? 700 : 500,
+                  textAlign: 'left',
+                  cursor: 'pointer'
+                }}
+              >
+                <span>Level {sec.level_number}: {sec.title.split(':')[1] || sec.title}</span>
+                {resolveDiagram(topic, sec) && <span>📐</span>}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Current Level Quick Navigation Banner */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          background: 'var(--bg-secondary)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: 'var(--radius-md)',
+          padding: '10px 14px',
+          marginBottom: '16px',
+          gap: '8px'
+        }}>
+          <button
+            onClick={() => setActiveLevel((l) => Math.max(1, l - 1))}
+            disabled={activeLevel === 1}
+            className="btn btn-secondary btn-sm"
+            style={{ padding: '6px 12px', minHeight: '32px', opacity: activeLevel === 1 ? 0.35 : 1 }}
+            title="Previous Level"
+          >
+            <ChevronLeft size={16} />
+            <span style={{ fontSize: '0.82rem' }}>Prev</span>
+          </button>
+
+          <div style={{ textAlign: 'center', flex: 1, padding: '0 6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+              <span style={{ fontSize: '0.76rem', color: 'var(--accent-blue)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                Level {activeLevel} of 8
+              </span>
               {resolveDiagram(topic, currentSection) && (
-                <span className="badge badge-completed" style={{ fontSize: '0.76rem', gap: '5px' }}>
-                  <ImageIcon size={13} />
-                  ઈજનેરી આકૃતિ (Engineering Diagram Active)
+                <span className="badge badge-completed" style={{ fontSize: '0.7rem', padding: '1px 6px' }}>
+                  📐 Diagram
                 </span>
               )}
             </div>
+            <h4 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-main)', marginTop: '2px', lineHeight: 1.3 }}>
+              {currentSection ? currentSection.title : `Level ${activeLevel}`}
+            </h4>
+          </div>
 
+          <button
+            onClick={() => setActiveLevel((l) => Math.min(8, l + 1))}
+            disabled={activeLevel === 8}
+            className="btn btn-secondary btn-sm"
+            style={{ padding: '6px 12px', minHeight: '32px', opacity: activeLevel === 8 ? 0.35 : 1 }}
+            title="Next Level"
+          >
+            <span style={{ fontSize: '0.82rem' }}>Next</span>
+            <ChevronRight size={16} />
+          </button>
+        </div>
+
+        {/* Section Content Display */}
+        {currentSection ? (
+          <div className="lesson-section-content">
             {/* Display Diagram if resolved */}
             {resolveDiagram(topic, currentSection) && (
               <MiningDiagram
@@ -291,6 +414,54 @@ function resolveDiagram(topic, section) {
             <p style={{ color: 'var(--text-main)', lineHeight: 1.85, fontSize: '1.05rem', whiteSpace: 'pre-line' }}>
               {(currentSection.content_text || '').replace(/\[DIAGRAM:[^\]]+\]/g, '').trim()}
             </p>
+
+            {/* Bottom In-Section Navigation for Seamless Reading */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginTop: '28px',
+              paddingTop: '18px',
+              borderTop: '1px solid var(--border-subtle)',
+              flexWrap: 'wrap',
+              gap: '12px'
+            }}>
+              <button
+                onClick={() => {
+                  setActiveLevel((l) => Math.max(1, l - 1));
+                  window.scrollTo({ top: 220, behavior: 'smooth' });
+                }}
+                disabled={activeLevel === 1}
+                className="btn btn-secondary"
+                style={{ opacity: activeLevel === 1 ? 0.35 : 1, minHeight: '38px', padding: '8px 16px' }}
+              >
+                <ChevronLeft size={16} />
+                <span>Previous Level</span>
+              </button>
+
+              <span style={{ fontSize: '0.84rem', color: 'var(--text-dim)', fontWeight: 600 }}>
+                Level {activeLevel} of 8
+              </span>
+
+              {activeLevel < 8 ? (
+                <button
+                  onClick={() => {
+                    setActiveLevel((l) => Math.min(8, l + 1));
+                    window.scrollTo({ top: 220, behavior: 'smooth' });
+                  }}
+                  className="btn btn-primary"
+                  style={{ minHeight: '38px', padding: '8px 18px' }}
+                >
+                  <span>Next: Level {activeLevel + 1}</span>
+                  <ChevronRight size={16} />
+                </button>
+              ) : (
+                <Link to={`/topic/${topic.id}/quiz`} className="btn btn-primary" style={{ minHeight: '38px', padding: '8px 18px' }}>
+                  <span>10-MCQ Mastery Quiz આપો</span>
+                  <ArrowRight size={16} />
+                </Link>
+              )}
+            </div>
           </div>
         ) : (
           <p style={{ color: 'var(--text-muted)' }}>No content available for this level.</p>
